@@ -1,42 +1,48 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
+import React from "react";
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
+ import styled from "styled-components";
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
+const NavBar = styled.div`
+  background-color: gray;
+  display: flex;
+  height: 44px;
+  justify-content: space-between;
+  align-items: center;
+`
+const Left = styled.div`
+  background-color: rebeccapurple;
+`
+const Right = styled.div`
+  background-color: orangered;
+  display: flex;
+`
 
-Header.defaultProps = {
-  siteTitle: ``,
-}
+const SubNav = styled.div`
+  background-color: cyan;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+`
+const NavItem = styled.a`
+  margin-right: 2rem;
+`
 
-export default Header
+ const Header = () => {
+   return (
+     <>
+      <NavBar>
+        <Left>Careqik</Left>
+        <Right>
+          <NavItem>Patients</NavItem>
+          <NavItem>Providers</NavItem>
+          <NavItem>Contact</NavItem>
+        </Right>
+      </NavBar>
+      <SubNav>
+        We are accepting new patients!
+      </SubNav>
+     </>
+   )
+ }
+
+ export default Header
