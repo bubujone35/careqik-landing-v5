@@ -19,9 +19,7 @@ const Wrapper = styled.div`
   margin-right: auto;
   padding-right: 10px;
   padding-left: 10px;
-
   background-color: lightgray;
-  height: 1200px;
 
 `
 

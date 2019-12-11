@@ -14,17 +14,20 @@ const Container = styled.div`
   background-color: lightgray;
   padding: 1rem;
 
-  @media screen and (max-width:860px) {
+  /* @media screen and (max-width:1000px) {
   flex-direction: column;
-}
+} */
 `
 const Section = styled.div`
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  text-align: center;
   background-color: orangered;
   padding: 2.5rem;
+  width: 300px;
 `
 const Title = styled.h3`
   font-size: 1.5rem;
@@ -50,19 +53,19 @@ const Works = () => (
     <Container>
       <Section>
         <IconStyle1><FaLaugh size={40}/></IconStyle1>
-        <Title>First Section</Title>
-        <Content>This is the content below the title.</Content>
+        <Title>Online intake</Title>
+        <Content>Complete our comprehensive online assessment to help identify your needs. </Content>
       </Section>
 
       <Section>
         <IconStyle2><FaClipboard size={40}/></IconStyle2>
-        <Title>Second Section</Title>
-        <Content>This is the content below the title.</Content>
+        <Title>Get matched</Title>
+        <Content>We match you with providers based upon your individual needs. </Content>
       </Section>
       <Section>
         <IconStyle3><FaTrophy size={40}/></IconStyle3>
-        <Title>Third Section</Title>
-        <Content>This is the content below the title.</Content>
+        <Title>Schedule appointment</Title>
+        <Content>Our flexible scheduling makes accessing care more convenient.</Content>
       </Section>
     </Container>
   </>

@@ -5,6 +5,7 @@ import SEO from "../components/seo"
 
 import Banner from "../components/banner"
 import Works from "../components/works"
+import Treatment from "../components/treatment"
 import Floating from "../components/buttons/floating"
 
 const IndexPage = () => (
@@ -12,6 +13,7 @@ const IndexPage = () => (
     <SEO title="Home" />
     <Banner />
     <Works />
+    <Treatment />
     <Floating />
   </Layout>
 )
