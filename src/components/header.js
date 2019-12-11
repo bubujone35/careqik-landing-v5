@@ -5,10 +5,13 @@ import styled from "styled-components";
 const NavBar = styled.div`
   background-color: gray;
   display: flex;
-  height: 44px;
+  height: 58px;
   justify-content: space-between;
   align-items: center;
+  font-size: 1.8rem;
+
 `
+
 const Left = styled.div`
   background-color: rebeccapurple;
 `
@@ -22,7 +25,10 @@ const SubNav = styled.div`
   height: 24px;
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
+  position: sticky;
+  top: 0;
+  font-size: 1.5rem;
 `
 const NavItem = styled.a`
   margin-right: 1.5rem;

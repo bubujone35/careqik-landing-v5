@@ -1,0 +1,27 @@
+import React from "react";
+import { FaPhone } from "react-icons/fa";
+
+import styled from "styled-components";
+
+const Button = styled.button`
+  position: fixed;
+  bottom: 2rem;
+  right: 32px;
+  z-index: 99;
+  cursor: pointer;
+
+  padding: 1rem;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
+`
+
+ const Floating = () => {
+   return (
+     <>
+      <Button><FaPhone size={20}/></Button>
+     </>
+   )
+ }
+
+ export default Floating;

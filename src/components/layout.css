@@ -6,4 +6,7 @@
 
 html {
   box-sizing: border-box;
+  font-family: Source Sans Pro;
+  font-size: 62.5%;
+  line-height: 1.6; 
 }
