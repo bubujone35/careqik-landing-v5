@@ -1,6 +1,6 @@
 import React from "react";
 
- import styled from "styled-components";
+import styled from "styled-components";
 
 const NavBar = styled.div`
   background-color: gray;
@@ -22,9 +22,10 @@ const SubNav = styled.div`
   height: 24px;
   display: flex;
   justify-content: center;
+  align-items: center; 
 `
 const NavItem = styled.a`
-  margin-right: 2rem;
+  margin-right: 1.5rem;
 `
 
  const Header = () => {
