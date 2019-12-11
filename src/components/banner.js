@@ -45,6 +45,7 @@ const Title = styled.h1`
 const Subtitle = styled.h3`
   font-size: 1.5rem;
   font-weight: 400;
+  margin-top: 1.5rem; 
 
   @media screen and (max-width:560px) {
   margin-top: 2rem;
@@ -63,7 +64,7 @@ const Button = styled.button`
   font-weight: 600;
   margin-top: 7rem;
   font-size: 1.5rem;
-  border-radius: 6px;
+  border-radius: 4px;
 
   @media screen and (max-width:560px) {
   padding: 1rem 6rem;
@@ -76,7 +77,7 @@ const Image = styled.img`
 const ImageSmall = styled.img`
   max-width: 20rem;
   min-width: 12rem;
-  margin-top: 4rem; 
+  margin-top: 4rem;
 
   @media screen and (min-width:360px) {
   display: none;

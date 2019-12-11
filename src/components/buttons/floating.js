@@ -19,7 +19,7 @@ const Button = styled.button`
  const Floating = () => {
    return (
      <>
-      <Button><FaPhone size={20}/></Button>
+      <Button><a href="tel:1-555-555-5555"><FaPhone size={20}/></a></Button>
      </>
    )
  }
