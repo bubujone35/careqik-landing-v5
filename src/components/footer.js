@@ -17,6 +17,7 @@ const Container = styled.div`
   height: 300px;
   bottom: 0
   position: absolute;
+  justify-content: center;
 `
 
 const Subtitle = styled.p`
@@ -34,6 +35,7 @@ const Icons = styled.div`
   width: 30%;
   max-width: 300px;
   text-decoration: none;
+  margin-top: 1rem; 
 `
 const StyledIcon = styled.a`
   display: inline-block;

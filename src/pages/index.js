@@ -6,6 +6,9 @@ import SEO from "../components/seo"
 import Banner from "../components/banner"
 import Works from "../components/works"
 import Treatment from "../components/treatment"
+import Specialties from "../components/specialties"
+import Partners from "../components/partners"
+import Cta from "../components/cta"
 import Floating from "../components/buttons/floating"
 
 const IndexPage = () => (
@@ -14,6 +17,9 @@ const IndexPage = () => (
     <Banner />
     <Works />
     <Treatment />
+    <Specialties />
+    <Partners />
+    <Cta />
     <Floating />
   </Layout>
 )

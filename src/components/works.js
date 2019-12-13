@@ -11,7 +11,7 @@ const Container = styled.div`
   align-items: center;
   background-color: gray;
   flex-wrap: wrap;
-  background-color: lightgray;
+  background-color: gray;
   padding: 1rem;
 
   /* @media screen and (max-width:1000px) {
@@ -25,7 +25,6 @@ const Section = styled.div`
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: orangered;
   padding: 2.5rem;
   width: 300px;
 `

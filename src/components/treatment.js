@@ -9,7 +9,6 @@ const Container = styled.div`
   /* align-items: center; */
   flex-wrap: wrap;
   background-color: lightgray;
-  padding: 1rem;
   flex-wrap: wrap;
 
 `
@@ -17,9 +16,8 @@ const Left = styled.div`
   display: flex;
   flex-direction: column;
   align-items: start;
-  padding: 1rem;
+  padding: 4rem;
   justify-content: center;
-  background-color: darkgray;
 
   @media screen and (max-width:560px) {
   align-items: center;
@@ -27,32 +25,42 @@ const Left = styled.div`
   }
 `
 const Right = styled.div`
-display: flex;
-flex-direction: column;
-padding: 1rem;
-justify-content: space-around;
-background-color: cyan;
-
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+  justify-content: space-around;
+  align-items: start;
 `
 const Title = styled.div`
-  font-size: 3rem;
+  font-size: 3.5rem;
 `
 const Subtitle = styled.div`
   font-size: 2rem;
 `
 const Image = styled.img`
-  max-width: 20rem;
-  min-width: 12rem;
-
+  max-width: 25rem;
+  min-width: 15rem;
 `
 const List = styled.ul`
   list-style-position: inside;
   font-size: 1.5rem;
+  margin-top: 2rem;
 `
 const ListItem = styled.li`
 
 `
+const Button = styled.button`
+  padding: 1rem 3rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  border-radius: 4px;
 
+  @media screen and (max-width:560px) {
+  padding: 1rem 6rem;
+`
 
 const Works = () => (
   <>
@@ -68,6 +76,7 @@ const Works = () => (
           <ListItem>Individual therapy</ListItem>
           <ListItem>Family therapy</ListItem>
         </List>
+        <Button>Learn more</Button>
       </Right>
     </Container>
   </>

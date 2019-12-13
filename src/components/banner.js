@@ -6,7 +6,7 @@ import styled from "styled-components";
 const Container = styled.div`
   display: flex;
   justify-content: space-around;
-  background-color: gray;
+  background-color: white;
   flex-wrap: wrap;
   padding: 1rem;
   min-height: 65vh;
@@ -45,7 +45,7 @@ const Title = styled.h1`
 const Subtitle = styled.h3`
   font-size: 1.5rem;
   font-weight: 400;
-  margin-top: 1.5rem; 
+  margin-top: 1.5rem;
 
   @media screen and (max-width:560px) {
   margin-top: 2rem;
@@ -65,6 +65,7 @@ const Button = styled.button`
   margin-top: 7rem;
   font-size: 1.5rem;
   border-radius: 4px;
+  border: 1px solid black; 
 
   @media screen and (max-width:560px) {
   padding: 1rem 6rem;

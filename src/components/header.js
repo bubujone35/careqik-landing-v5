@@ -1,27 +1,28 @@
 import React from "react";
+import { Link } from "gatsby";
 
 import styled from "styled-components";
 
 const NavBar = styled.div`
-  background-color: gray;
   display: flex;
   height: 58px;
   justify-content: space-between;
   align-items: center;
   font-size: 1.8rem;
-
+  background-color: white;
+  border-bottom: solid 1px gray;
+  
 `
 
 const Left = styled.div`
-  background-color: rebeccapurple;
+  margin-left: 1.5rem;
 `
 const Right = styled.div`
-  background-color: orangered;
   display: flex;
 `
 
 const SubNav = styled.div`
-  background-color: cyan;
+  background-color: lightgray;
   height: 24px;
   display: flex;
   justify-content: center;
@@ -29,20 +30,26 @@ const SubNav = styled.div`
   position: sticky;
   top: 0;
   font-size: 1.5rem;
+  padding: 1rem;
 `
 const NavItem = styled.a`
   margin-right: 1.5rem;
 `
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: black;
+`
+
 
  const Header = () => {
    return (
      <>
       <NavBar>
-        <Left>Careqik</Left>
+        <Left><StyledLink to="/">Careqik</StyledLink></Left>
         <Right>
-          <NavItem>Patients</NavItem>
-          <NavItem>Providers</NavItem>
-          <NavItem>Contact</NavItem>
+          <NavItem><StyledLink to="/">Patients</StyledLink></NavItem>
+          <NavItem><StyledLink to="/">Providers</StyledLink></NavItem>
+          <NavItem><StyledLink to="/">Contact</StyledLink></NavItem>
         </Right>
       </NavBar>
       <SubNav>
