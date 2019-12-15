@@ -17,8 +17,8 @@ const IndexPage = () => (
     <Banner />
     <Works />
     <Treatment />
-    <Specialties />
     <Partners />
+    <Specialties />
     <Cta />
     <Floating />
   </Layout>

@@ -9,9 +9,8 @@ const Container = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: gray;
+  background-color: #FAFAFA;
   flex-wrap: wrap;
-  background-color: gray;
   padding: 1rem;
 
   /* @media screen and (max-width:1000px) {
@@ -29,10 +28,12 @@ const Section = styled.div`
   width: 300px;
 `
 const Title = styled.h3`
-  font-size: 1.5rem;
+  font-size: 2rem;
+  color: #074B5E;
 `
 const Content = styled.p`
   font-size: 1.5rem;
+  color: #074B5E;
 `
 
 const IconStyle1 = styled.div`
@@ -53,7 +54,7 @@ const Works = () => (
       <Section>
         <IconStyle1><FaLaugh size={40}/></IconStyle1>
         <Title>Online intake</Title>
-        <Content>Complete our comprehensive online assessment to help identify your needs. </Content>
+        <Content>Complete our comprehensive online assessment. </Content>
       </Section>
 
       <Section>
@@ -64,7 +65,7 @@ const Works = () => (
       <Section>
         <IconStyle3><FaTrophy size={40}/></IconStyle3>
         <Title>Schedule appointment</Title>
-        <Content>Our flexible scheduling makes accessing care more convenient.</Content>
+        <Content>Our flexible scheduling makes accessing care easy.</Content>
       </Section>
     </Container>
   </>

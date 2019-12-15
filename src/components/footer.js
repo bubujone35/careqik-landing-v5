@@ -13,7 +13,7 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  background-color: rebeccapurple;
+  background-color: #1899AB;
   height: 300px;
   bottom: 0
   position: absolute;
@@ -21,10 +21,9 @@ const Container = styled.div`
 `
 
 const Subtitle = styled.p`
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: normal;
   text-align: center;
-  line-height: 1.5rem;
   color: white;
   padding-bottom: 1rem;
 `
@@ -35,14 +34,14 @@ const Icons = styled.div`
   width: 30%;
   max-width: 300px;
   text-decoration: none;
-  margin-top: 1rem; 
+  margin-top: 1rem;
 `
 const StyledIcon = styled.a`
   display: inline-block;
-  color: gray;
+  color: white;
   text-decoration: none;
   &:hover {
-    color: lightgray;
+    color: #3A7174;
     -o-transition:.5s;
     -ms-transition:.5s;
     -moz-transition:.5s;
@@ -52,16 +51,17 @@ const StyledIcon = styled.a`
 `
 
 const StyledLink = styled(Link)`
-  color: var(--primaryWhite);
+  color: white;
   text-decoration: none;
   padding: 2rem;
+  font-size: 2rem;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.3s;
   &:hover {
-    color: var(--primaryGreen);
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition:.3s;
+    color: #3A7174;
   }
 `
 

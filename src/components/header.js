@@ -9,9 +9,9 @@ const NavBar = styled.div`
   justify-content: space-between;
   align-items: center;
   font-size: 1.8rem;
-  background-color: white;
-  border-bottom: solid 1px gray;
-  
+  background-color: #1899AB;
+  border-bottom: solid 1px white;
+
 `
 
 const Left = styled.div`
@@ -22,7 +22,7 @@ const Right = styled.div`
 `
 
 const SubNav = styled.div`
-  background-color: lightgray;
+  background-color: #1899AB;
   height: 24px;
   display: flex;
   justify-content: center;
@@ -30,14 +30,25 @@ const SubNav = styled.div`
   position: sticky;
   top: 0;
   font-size: 1.5rem;
-  padding: 1rem;
+  padding: 1.5rem;
+  border-bottom: solid 1px white;
+  color: white;
 `
 const NavItem = styled.a`
   margin-right: 1.5rem;
 `
 const StyledLink = styled(Link)`
   text-decoration: none;
-  color: black;
+  color: white;
+
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.3s;
+  &:hover {
+    color: #3A7174;
+  }
 `
 
 

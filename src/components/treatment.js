@@ -8,16 +8,19 @@ const Container = styled.div`
   justify-content: space-around;
   /* align-items: center; */
   flex-wrap: wrap;
-  background-color: lightgray;
-  flex-wrap: wrap;
 
 `
 const Left = styled.div`
   display: flex;
   flex-direction: column;
   align-items: start;
-  padding: 4rem;
+  padding: 8rem;
   justify-content: center;
+  flex: 1;
+
+  @media screen and (max-width:800px) {
+  flex: none;
+  }
 
   @media screen and (max-width:560px) {
   align-items: center;
@@ -27,15 +30,25 @@ const Left = styled.div`
 const Right = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 4rem;
-  justify-content: space-around;
   align-items: start;
+  padding: 8rem;
+  background-color: #1899AB;
+  flex: 2;
+
+  /* justify-content: start; */
+
+  @media screen and (max-width:560px) {
+  align-items: center;
+
+  }
 `
 const Title = styled.div`
   font-size: 3.5rem;
+  color: white;
 `
 const Subtitle = styled.div`
   font-size: 2rem;
+  color: white;
 `
 const Image = styled.img`
   max-width: 25rem;
@@ -43,20 +56,25 @@ const Image = styled.img`
 `
 const List = styled.ul`
   list-style-position: inside;
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-top: 2rem;
+  color: white;
 `
 const ListItem = styled.li`
 
 `
 const Button = styled.button`
-  padding: 1rem 3rem;
+  padding: 1.2rem 3.5rem;
   border: none;
   cursor: pointer;
   font-weight: 600;
-  margin-top: 2rem;
+  margin-top: 5rem;
   font-size: 1.5rem;
+  color: white;
   border-radius: 4px;
+  border: 1px solid white;
+  background-color: #1899AB;
+  ;
 
   @media screen and (max-width:560px) {
   padding: 1rem 6rem;
