@@ -23,11 +23,11 @@ const Section = styled.div`
 `
 const Title = styled.h3`
   font-size: 1.5rem;
-  color: gray;
+  color: rgba(51, 132, 154, 0.95);
 `
 const IconStyle = styled.div`
   padding: 2rem;
-  color: gray;
+  color: rgba(249, 209, 106, 1);
 `
 
 

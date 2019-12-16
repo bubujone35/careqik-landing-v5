@@ -81,7 +81,7 @@ const Button = styled.button`
  border-radius: 4px;
  outline: none;
  letter-spacing: 0.05em;
- margin-top: 5rem; 
+ margin-top: 5rem;
 
  -o-transition:.5s;
  -ms-transition:.5s;
@@ -89,7 +89,8 @@ const Button = styled.button`
  -webkit-transition:.5s;
  transition:.3s;
  -webkit-backface-visibility: hidden;
- -webkit-transform: translateZ(0) scale(1.0, 1.0);
+ /* -webkit-transform: translateZ(0) scale(1.0, 1.0); */
+ /* for some reason the above causes the CTA button to overlay ontop of the subnav component */
 
  &:hover {
    color: #FDFDFD;

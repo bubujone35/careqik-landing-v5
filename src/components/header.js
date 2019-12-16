@@ -10,7 +10,7 @@ const NavBar = styled.div`
   align-items: center;
   font-size: 1.8rem;
   background-color: #1899AB;
-  border-bottom: solid 1px white;
+  border-bottom: solid 0.5px white;
 
 `
 
@@ -31,7 +31,7 @@ const SubNav = styled.div`
   top: 0;
   font-size: 1.5rem;
   padding: 1.5rem;
-  border-bottom: solid 1px white;
+  border-bottom: 2px solid rgba(249, 209, 106, 1);
   color: white;
 `
 const NavItem = styled.a`
