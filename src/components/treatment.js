@@ -39,16 +39,25 @@ const Right = styled.div`
 
   @media screen and (max-width:560px) {
   align-items: center;
+  padding: 2rem;
 
   }
 `
 const Title = styled.div`
   font-size: 3.5rem;
   color: white;
+
+  @media screen and (max-width:560px) {
+  font-size: 2.5rem;
 `
 const Subtitle = styled.div`
   font-size: 2rem;
   color: white;
+
+  @media screen and (max-width:560px) {
+  font-size: 1.5rem;
+
+}
 `
 const Image = styled.img`
   max-width: 25rem;
@@ -59,6 +68,10 @@ const List = styled.ul`
   font-size: 2rem;
   margin-top: 2rem;
   color: white;
+
+  @media screen and (max-width:560px) {
+  font-size: 1.5rem;
+}
 `
 const ListItem = styled.li`
 
@@ -74,10 +87,33 @@ const Button = styled.button`
   border-radius: 4px;
   border: 1px solid white;
   background-color: #1899AB;
-  ;
+  text-decoration: none;
+
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.3s;
+  -webkit-backface-visibility: hidden;
+
+  &:hover {
+    color: #FDFDFD;
+    background: rgba(24, 153, 171, 0.4);
+    box-shadow: 0px 4px 16px rgba(79, 71, 51, 0.5);
+    transform: translateY(-3px);
+
+  }
+
+  &:active {
+    box-shadow: 0px 4px 16px rgba(79, 71, 51, 0.1);
+    transform: translateY(-1px);
+    }
+  }
+
 
   @media screen and (max-width:560px) {
-  padding: 1rem 6rem;
+  width: 100%;
+}
 `
 
 const Works = () => (

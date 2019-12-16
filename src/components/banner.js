@@ -38,7 +38,7 @@ const Title = styled.h1`
   line-height: 1.2;
 
   @media screen and (max-width:720px) {
-  font-size: 2.6rem;
+  font-size: 3.5rem;
   text-align: center;
   margin-top: 2rem;
 }

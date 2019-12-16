@@ -14,12 +14,12 @@ import "./layout.css"
 import styled from "styled-components";
 
 const Wrapper = styled.div`
-  max-width: 1200px;
+  max-width: 1460px;
   margin-left: auto;
   margin-right: auto;
   padding: 5px;
   box-shadow: 0px 4px 16px rgba(17, 122, 155, 0.2);
-  border-radius: 4px; 
+  border-radius: 4px;
 
 `
 

@@ -20,6 +20,10 @@ const Right = styled.div`
 const Title = styled.h3`
   font-size: 3.5rem;
   color: rgba(51, 132, 154, 0.95);
+
+  @media screen and (max-width:720px) {
+  font-size: 2.5rem; 
+}
 `
 
 const Button = styled.button`
