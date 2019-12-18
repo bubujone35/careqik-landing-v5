@@ -15,6 +15,10 @@ const Button = styled.button`
   border: none;
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
   background-color: #21A6AC;
+
+  @media screen and (max-width:560px) {
+  right: 62px; 
+  }
 `
 const Link = styled.a`
   color: white;

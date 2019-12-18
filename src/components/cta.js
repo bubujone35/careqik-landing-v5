@@ -16,13 +16,16 @@ const Left = styled.div`
 `
 const Right = styled.div`
   padding: 2rem;
+  @media screen and (max-width:560px) {
+  padding: 1rem; 
+  }
 `
 const Title = styled.h3`
   font-size: 3.5rem;
   color: rgba(51, 132, 154, 0.95);
 
   @media screen and (max-width:720px) {
-  font-size: 2.5rem; 
+  font-size: 2.5rem;
 }
 `
 
@@ -60,7 +63,8 @@ const Button = styled.button`
   }
 
   @media screen and (max-width:560px) {
-  padding: 1rem 6rem;
+  width: 100%;
+  }
 `
 
 const Cta = () => (
