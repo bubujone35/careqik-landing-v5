@@ -9,6 +9,8 @@ import Treatment from "../components/treatment"
 import Specialties from "../components/specialties"
 import Partners from "../components/partners"
 import Cta from "../components/cta"
+import Posts from "../components/posts"
+
 import Floating from "../components/buttons/floating"
 
 const IndexPage = () => (
@@ -20,6 +22,7 @@ const IndexPage = () => (
     <Partners />
     <Specialties />
     <Cta />
+    <Posts />
     <Floating />
   </Layout>
 )
