@@ -24,7 +24,7 @@ const Left = styled.div`
 
   @media screen and (max-width:560px) {
   align-items: center;
-  padding: 2rem; 
+  padding: 2rem;
 
   }
 `
@@ -35,6 +35,7 @@ const Right = styled.div`
   padding: 8rem;
   background-color: #1899AB;
   flex: 2;
+  border-radius: 0px 0px 0px 100px;
 
   /* justify-content: start; */
 

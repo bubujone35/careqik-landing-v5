@@ -16,6 +16,7 @@ const Left = styled.div`
   padding: 8rem;
   background-color: #1899AB;
   flex: 2;
+  border-radius: 0px 0px 100px 0px;
 
   /* justify-content: start; */
 

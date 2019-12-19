@@ -3,6 +3,11 @@ import { FaLaugh } from 'react-icons/fa';
 
 import styled from "styled-components";
 
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  background-color: #FAFAFA;
+`
 const Container = styled.div`
   display: flex;
   flex-wrap: nowrap;
@@ -12,14 +17,23 @@ const Container = styled.div`
    display: none;
  }
 `
+const Header = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+`
+const Heading = styled.h3`
+  font-size: 2rem;
+  padding: 1rem 4rem;
+`
 const Section = styled.div`
   flex: 0 0 auto;
-  padding: 4.5rem;
+  padding: 2rem 4.5rem 4.5rem 4.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #FAFAFA;
 `
 const Title = styled.h3`
   font-size: 1.5rem;
@@ -33,6 +47,10 @@ const IconStyle = styled.div`
 
 const Partners = () => (
   <>
+  <Wrapper>
+    <Header>
+      <Heading>Our trusted partners</Heading>
+    </Header>
     <Container>
       <Section>
         <IconStyle><FaLaugh size={40}/></IconStyle>
@@ -70,8 +88,8 @@ const Partners = () => (
         <IconStyle><FaLaugh size={40}/></IconStyle>
         <Title>Scottsdale Providence</Title>
       </Section>
-
     </Container>
+    </Wrapper>
   </>
    )
 
