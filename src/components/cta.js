@@ -17,7 +17,7 @@ const Left = styled.div`
 const Right = styled.div`
   padding: 2rem;
   @media screen and (max-width:560px) {
-  padding: 1rem; 
+  padding: 1rem;
   }
 `
 const Title = styled.h3`
@@ -46,7 +46,7 @@ const Button = styled.button`
   -webkit-transition:.5s;
   transition:.3s;
   -webkit-backface-visibility: hidden;
-  -webkit-transform: translateZ(0) scale(1.0, 1.0);
+  /* -webkit-transform: translateZ(0) scale(1.0, 1.0); */
 
   &:hover {
     color: #FDFDFD;

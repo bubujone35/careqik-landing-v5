@@ -20,7 +20,6 @@ const Wrapper = styled.div`
   padding: 5px;
   box-shadow: 0px 4px 16px rgba(17, 122, 155, 0.2);
   border-radius: 4px;
-
 `
 
 const Layout = ({ children }) => {

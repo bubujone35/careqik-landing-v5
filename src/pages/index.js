@@ -10,6 +10,7 @@ import Specialties from "../components/specialties"
 import Partners from "../components/partners"
 import Cta from "../components/cta"
 import Posts from "../components/posts"
+import Subscribe from "../components/subscribe"
 
 import Floating from "../components/buttons/floating"
 
@@ -23,6 +24,7 @@ const IndexPage = () => (
     <Specialties />
     <Cta />
     <Posts />
+    <Subscribe />
     <Floating />
   </Layout>
 )

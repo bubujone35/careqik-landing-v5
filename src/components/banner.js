@@ -110,7 +110,7 @@ const Button = styled.button`
   padding: 1rem 6rem;
 `
 const Image = styled.img`
-  max-width: 20rem;
+  max-width: 30rem;
   min-width: 12rem;
 
 `
