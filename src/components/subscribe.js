@@ -6,14 +6,31 @@ import styled from "styled-components";
 
 const Container = styled.div`
   display: flex;
-  padding: 6rem 2rem;
+  padding: 6rem;
   background-color: #FAFAFA;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+
+  @media screen and (max-width:560px) {
+  padding: 1rem;
+}
+`
+const Wrapper = styled.div`
+  padding: 4rem 2rem;
+  border: 1px solid gray;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  border-radius: 8px;
 `
 const Left = styled.div`
   background-color: gray
   flex-direction: column;
   padding: 1rem;
   margin-right: 2rem;
+  min-width: 360px;
+  flex: 1;
 `
 const Right = styled.div`
   background-color: lightgray;
@@ -28,35 +45,38 @@ const Subtitle = styled.p`
 `
 const Form = styled.form`
   display: flex;
-  flex-direction: column;
-  align-items: start;
+  align-items: center;
+  justify-content: start;
+  flex-wrap: wrap;
+
 `
 const Button = styled.button`
   padding: 1.5rem 6rem;
-  margin-top: 1.5rem;
   border-radius: 4px;
+  margin: 1rem;
 `
 
 
 const Subscribe = () => (
   <>
     <Container>
-      <Left>
-        <Title>Newsletter</Title>
-        <Subtitle>Stay updated about all things Careqik</Subtitle>
+      <Wrapper>
+        <Left>
+          <Title>Newsletter</Title>
+          <Subtitle>Stay updated about all things Careqik</Subtitle>
+        </Left>
+        <Right>
         <Form>
           <Input
             for="email"
             name="email"
             type="text"
-            placeholder="Email (required)"
+            placeholder="your.email@example.com"
           />
-          <Button>Submit</Button>
+          <Button>Subscribe</Button>
         </Form>
-      </Left>
-      <Right>
-        This is the right area
-      </Right>
+        </Right>
+      </Wrapper>
     </Container>
   </>
    )
