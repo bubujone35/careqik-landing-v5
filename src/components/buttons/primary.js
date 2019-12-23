@@ -2,35 +2,7 @@ import React from "react";
 
 import styled from "styled-components";
 
-const Container = styled.div`
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
-  padding: 2rem;
-  background-color: #FAFAFA;
-  margin-top: 4rem; 
-
-`
-const Left = styled.div`
-  padding: 2rem
-`
-const Right = styled.div`
-  padding: 2rem;
-  @media screen and (max-width:560px) {
-  padding: 1rem;
-  }
-`
-const Title = styled.h3`
-  font-size: 3.5rem;
-  color: rgba(51, 132, 154, 0.95);
-
-  @media screen and (max-width:720px) {
-  font-size: 2.5rem;
-}
-`
-
-const Button = styled.button`
+const PrimaryButton = styled.button`
   background: #FBE6B0;
   color: rgba(51, 132, 154, 0.95);
   font-size: 1.7rem;
@@ -67,18 +39,3 @@ const Button = styled.button`
   width: 100%;
   }
 `
-
-const Cta = () => (
-  <>
-    <Container>
-      <Left>
-        <Title>Ready to get started?</Title>
-      </Left>
-      <Right>
-        <Button>Book appointment</Button>
-      </Right>
-    </Container>
-  </>
-   )
-
- export default Cta;

@@ -23,6 +23,7 @@ const Left = styled.div`
   @media screen and (max-width:560px) {
   align-items: center;
   padding: 2rem;
+  border-radius: 0px 0px 0px 0px;
 
   }
 `

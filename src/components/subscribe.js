@@ -1,7 +1,6 @@
 import React from "react";
 import { Input, Message } from "./inputs/input"
 
-
 import styled from "styled-components";
 
 const Container = styled.div`
@@ -12,7 +11,7 @@ const Container = styled.div`
   flex-wrap: wrap;
 
   @media screen and (max-width:560px) {
-  padding: 1rem;
+  padding: 0rem;
 }
 `
 const Wrapper = styled.div`
@@ -23,16 +22,23 @@ const Wrapper = styled.div`
   flex-wrap: wrap;
   width: 100%;
   border-radius: 8px;
+  @media screen and (max-width:560px) {
+  padding: 1rem;
+  border: none;
+}
 `
 const Left = styled.div`
+  /* display: flex; */
   background-color: gray
   flex-direction: column;
   padding: 1rem;
   margin-right: 2rem;
   min-width: 360px;
   flex: 1;
+}
 `
 const Right = styled.div`
+  display: flex;
   background-color: lightgray;
   padding: 1rem;
   flex: 1;
@@ -42,6 +48,9 @@ const Title = styled.h2`
 `
 const Subtitle = styled.p`
   font-size: 2rem;
+  @media screen and (max-width:560px) {
+  font-size: 1.5rem;
+}
 `
 const Form = styled.form`
   display: flex;
@@ -54,6 +63,10 @@ const Button = styled.button`
   padding: 1.5rem 6rem;
   border-radius: 4px;
   margin: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  width: 100%:
+
 `
 
 

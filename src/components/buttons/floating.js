@@ -16,8 +16,8 @@ const Button = styled.button`
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
   background-color: #21A6AC;
 
-  @media screen and (max-width:560px) {
-  right: 62px; 
+  @media screen and (max-width:360px) {
+  right: 62px;
   }
 `
 const Link = styled.a`

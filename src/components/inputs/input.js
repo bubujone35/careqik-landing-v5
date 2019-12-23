@@ -7,7 +7,7 @@ export const Input = styled.input.attrs(props => ({
   font-size: 1rem;
   padding: 1.7rem;
   margin: 1rem;
-  width: 300px;
+  width: 100%;
   max-width: 600px;
   overflow: hidden;
   outline: none;
@@ -19,6 +19,9 @@ export const Input = styled.input.attrs(props => ({
   background-color: #FCFCFC;
   color: #6A999C;
   }
+  @media screen and (max-width:560px) {
+  /* width: 200px; */
+}
 `
 
 export const Message = styled.input.attrs(props => ({

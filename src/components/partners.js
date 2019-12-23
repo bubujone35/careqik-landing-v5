@@ -29,7 +29,7 @@ const Heading = styled.h3`
 `
 const Section = styled.div`
   flex: 0 0 auto;
-  padding: 2rem 4.5rem 4.5rem 4.5rem;
+  padding: 0rem 4.5rem 4.5rem 4.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
