@@ -1,7 +1,7 @@
 import React from "react";
-import { FaLaugh } from 'react-icons/fa';
+import { FaUserPlus } from 'react-icons/fa';
 import { FaClipboard } from 'react-icons/fa';
-import { FaTrophy } from 'react-icons/fa';
+import { FaCalendarDay } from 'react-icons/fa';
 
 import styled from "styled-components";
 
@@ -52,18 +52,18 @@ const Works = () => (
   <>
     <Container>
       <Section>
-        <IconStyle1><FaLaugh size={40}/></IconStyle1>
+        <IconStyle1><FaClipboard size={40}/></IconStyle1>
         <Title>Online intake</Title>
         <Content>Complete our comprehensive online assessment. </Content>
       </Section>
 
       <Section>
-        <IconStyle2><FaClipboard size={40}/></IconStyle2>
+        <IconStyle2><FaUserPlus size={40}/></IconStyle2>
         <Title>Get matched</Title>
         <Content>We match you with providers based upon your individual needs. </Content>
       </Section>
       <Section>
-        <IconStyle3><FaTrophy size={40}/></IconStyle3>
+        <IconStyle3><FaCalendarDay size={40}/></IconStyle3>
         <Title>Schedule appointment</Title>
         <Content>Our flexible scheduling makes accessing care easy.</Content>
       </Section>

@@ -14,6 +14,10 @@ const Container = styled.div`
   flex-wrap: wrap;
   /* background-color: #52ADAF; */
   background-color: #1899AB;
+
+  @media screen and (max-width:560px) {
+  padding: 1rem;
+}
 `
 const Blog = styled.div`
   display: flex;
@@ -50,6 +54,7 @@ const Card = styled.div`
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
   flex: 1 1 350px;
   background: linear-gradient(90.4deg, #FCFFDB 0.26%, #FFF5BE 99.71%);
+
 `
 const Title = styled.h1`
   font-size: 3.5rem;
@@ -65,7 +70,7 @@ const Meta = styled.h4`
   font-size: 1.4rem;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.54);
-  margin-left: 0.1rem; 
+  margin-left: 0.1rem;
 `
 const Content = styled.p`
   font-size: 1.5rem;
@@ -76,6 +81,7 @@ const Button = styled.button`
   display: flex;
   align-items: center;
   text-decoration: none;
+  text-transform: uppercase;
   border: none;
   text-align: start;
   margin: 1rem 0rem;
@@ -93,7 +99,7 @@ const Posts = () => (
         <Title>The Careqik Blog</Title>
         <SubHeading>Wellness tips and news</SubHeading>
       </BlogHeader>
-      <ViewAllButton>View all posts<IoIosArrowRoundForward size={26}/></ViewAllButton>
+      <ViewAllButton>View all<IoIosArrowRoundForward size={26}/></ViewAllButton>
     </Blog>
       <Container>
         <Card>
