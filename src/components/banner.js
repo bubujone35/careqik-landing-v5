@@ -34,7 +34,7 @@ const Right = styled.div`
   display: none;
 `
 const Title = styled.h1`
-  font-size: 5rem;
+  font-size: 7rem;
   line-height: 1.2;
 
   @media screen and (max-width:720px) {

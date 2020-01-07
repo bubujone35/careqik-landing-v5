@@ -17,6 +17,18 @@ const Container = styled.div`
   flex-direction: column;
 } */
 `
+const Header = styled.div`
+  background-color: #FAFAFA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem;
+`
+const Heading = styled.h2`
+  font-size: 3.5rem;
+  padding: 1rem 4rem;
+  color: rgba(51, 132, 154, 0.95);
+`
 const Section = styled.div`
   display: flex;
   flex-direction: column;
@@ -24,7 +36,7 @@ const Section = styled.div`
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 2.5rem;
+  padding: 0rem 2.5rem 2.5rem 2.5rem;
   width: 300px;
 `
 const Title = styled.h3`
@@ -50,6 +62,9 @@ const IconStyle3 = styled.div`
 
 const Works = () => (
   <>
+    <Header>
+      <Heading>How it works</Heading>
+    </Header>
     <Container>
       <Section>
         <IconStyle1><FaClipboard size={40}/></IconStyle1>
