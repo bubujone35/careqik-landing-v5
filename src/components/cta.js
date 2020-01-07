@@ -4,12 +4,13 @@ import styled from "styled-components";
 
 const Container = styled.div`
   display: flex;
+  flex-direction: column; 
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-  padding: 2rem;
+  padding: 8rem 2rem;
   background-color: #FAFAFA;
-  margin-top: 4rem; 
+  /* margin-top: 4rem; */
 
 `
 const Left = styled.div`

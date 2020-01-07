@@ -14,7 +14,7 @@ const Button = styled.button`
   border-radius: 50%;
   border: none;
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
-  background-color: #21A6AC;
+  background: rgba(249, 209, 106, 1);
 
   @media screen and (max-width:360px) {
   right: 62px;
