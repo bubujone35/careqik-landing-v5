@@ -1,5 +1,6 @@
 import React from "react";
 import { IoIosArrowRoundForward } from "react-icons/io";
+import { Link } from "gatsby";
 
 import styled from "styled-components";
 
@@ -91,6 +92,11 @@ const Button = styled.button`
   color: rgba(51, 132, 154, 0.99);
   background-color: transparent;
 `
+const StyledLink = styled(Link)`
+  color: #4E888C;
+  text-decoration: none;
+`
+
 const Posts = () => (
   <>
   <Wrapper>
@@ -99,7 +105,7 @@ const Posts = () => (
         <Title>The Careqik Blog</Title>
         <SubHeading>Wellness tips and news</SubHeading>
       </BlogHeader>
-      <ViewAllButton>View all<IoIosArrowRoundForward size={26}/></ViewAllButton>
+      <ViewAllButton><StyledLink to="/blog">View all</StyledLink><IoIosArrowRoundForward size={26}/></ViewAllButton>
     </Blog>
       <Container>
         <Card>
