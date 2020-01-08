@@ -1,7 +1,6 @@
 import React from "react";
 import { IoIosArrowRoundForward } from "react-icons/io";
-import { Link } from "gatsby";
-import { StaticQuery, graphql } from 'gatsby'
+import { StaticQuery, graphql, Link } from 'gatsby'
 
 import styled from "styled-components";
 
@@ -11,6 +10,9 @@ const getMarkdownPosts = graphql`
       totalCount
       edges {
         node {
+          fields {
+            slug
+          }
           id
           frontmatter {
             title
@@ -138,7 +140,9 @@ const Posts = () => (
             <Title>{node.frontmatter.title}</Title>
             <SubTitle>{node.frontmatter.subtitle}</SubTitle>
             <Content>{node.excerpt}</Content>
-            <Button>Read more<IoIosArrowRoundForward size={26}/></Button>
+            <Button><StyledLink to={`/posts${node.fields.slug}`}>
+            Read more</StyledLink><IoIosArrowRoundForward size={26}/>
+            </Button>
           </Card>
         ))}
         </Container>

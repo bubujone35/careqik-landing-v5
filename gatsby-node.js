@@ -15,6 +15,7 @@ exports.onCreateNode = ({ node, getNode, actions}) => {
   }
 }
 
+//Programmatically create new pages
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
   const result = await graphql(`
