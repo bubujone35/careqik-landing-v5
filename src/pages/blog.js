@@ -1,24 +1,25 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
+import Styled from "styled-components"
 
 import Layout from '../components/layout'
 
 const getMarkdownPosts = graphql`
-{
-  allMarkdownRemark {
-    totalCount
-    edges {
-      node {
-        id
-        frontmatter {
-          title
-          date
+  {
+    allMarkdownRemark {
+      totalCount
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+            date
+          }
+          excerpt
         }
-        excerpt
       }
     }
   }
-}
 `
 
 export default () => (

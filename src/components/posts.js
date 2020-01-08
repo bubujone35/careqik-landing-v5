@@ -1,8 +1,29 @@
 import React from "react";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { Link } from "gatsby";
+import { StaticQuery, graphql } from 'gatsby'
 
 import styled from "styled-components";
+
+const getMarkdownPosts = graphql`
+  {
+    allMarkdownRemark {
+      totalCount
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+            subtitle
+            date
+          }
+          excerpt
+        }
+      }
+    }
+  }
+`
+
 
 const Wrapper = styled.div`
   display: flex;
@@ -97,41 +118,34 @@ const StyledLink = styled(Link)`
   text-decoration: none;
 `
 
+
 const Posts = () => (
-  <>
-  <Wrapper>
-    <Blog>
-      <BlogHeader>
-        <Title>The Careqik Blog</Title>
-        <SubHeading>Wellness tips and news</SubHeading>
-      </BlogHeader>
-      <ViewAllButton><StyledLink to="/blog">View all</StyledLink><IoIosArrowRoundForward size={26}/></ViewAllButton>
-    </Blog>
-      <Container>
-        <Card>
-          <Meta>Wellness</Meta>
-          <Title>Mental health and the holidays</Title>
-          <SubTitle>How to take care of yourself</SubTitle>
-          <Content>The holidays can be a tough time for a lot of people. Having depression or anxiety can compound the stressors already associated with the holidays. Learn 5 techniques you can implement today to ease the stress.</Content>
-          <Button>Read more<IoIosArrowRoundForward size={26}/></Button>
-        </Card>
-        <Card>
-          <Meta>Recovery</Meta>
-          <Title>The 12-steps revisited, again</Title>
-          <SubTitle>An alternate view to staying sober</SubTitle>
-          <Content>AA can be a major component of recovery from alcohol and substance abuse. Many persons in sustained recovery credit the 12-steps to much of their success. Get an introduction to the 12-steps with Dr. Lee.</Content>
-          <Button>Read more<IoIosArrowRoundForward size={26}/></Button>
-        </Card>
-        <Card>
-          <Meta>Depression</Meta>
-          <Title>Sleep improves depression ratings</Title>
-          <SubTitle>How sleep hygiene can improve your health</SubTitle>
-          <Content>Recent studies evaluating the impact of sleep upon mental health outcomes has revealed that increasing the qualty of your sleep can have major improvements on mood and quality of life. </Content>
-          <Button>Read more<IoIosArrowRoundForward size={26}/></Button>
-        </Card>
-      </Container>
-    </Wrapper>
-  </>
-   )
+  <StaticQuery
+    query={getMarkdownPosts}
+    render={data => (
+    <>
+    <Wrapper>
+      <Blog>
+        <BlogHeader>
+          <Title>The Careqik Blog</Title>
+          <SubHeading>Wellness tips and news</SubHeading>
+        </BlogHeader>
+        <ViewAllButton><StyledLink to="/blog">View all</StyledLink><IoIosArrowRoundForward size={26}/></ViewAllButton>
+      </Blog>
+        <Container>
+          {data.allMarkdownRemark.edges.map(({ node }) =>(
+          <Card key={node.id}>
+            <Title>{node.frontmatter.title}</Title>
+            <SubTitle>{node.frontmatter.subtitle}</SubTitle>
+            <Content>{node.excerpt}</Content>
+            <Button>Read more<IoIosArrowRoundForward size={26}/></Button>
+          </Card>
+        ))}
+        </Container>
+      </Wrapper>
+    </>
+  )}
+ />
+)
 
  export default Posts;
