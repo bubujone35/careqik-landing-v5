@@ -6,7 +6,8 @@ import styled from "styled-components";
 
 const getMarkdownPosts = graphql`
   {
-    allMarkdownRemark(limit: 3, sort: {order: DESC, fields: [frontmatter___date]}) {
+    allMarkdownRemark(limit: 3,
+      sort: {order: DESC, fields: [frontmatter___date]}) {
       totalCount
       edges {
         node {
@@ -18,7 +19,7 @@ const getMarkdownPosts = graphql`
             meta
             title
             subtitle
-            date
+            date(formatString: "MMMM Do, YYYY")
           }
           excerpt
         }
