@@ -6,7 +6,7 @@ import styled from "styled-components";
 
 const getMarkdownPosts = graphql`
   {
-    allMarkdownRemark(limit: 3) {
+    allMarkdownRemark(limit: 3, sort: {order: DESC, fields: [frontmatter___date]}) {
       totalCount
       edges {
         node {
@@ -15,6 +15,7 @@ const getMarkdownPosts = graphql`
           }
           id
           frontmatter {
+            meta
             title
             subtitle
             date
@@ -137,7 +138,9 @@ const Posts = () => (
         <Container>
           {data.allMarkdownRemark.edges.map(({ node }) =>(
           <Card key={node.id}>
+            <Meta>{node.frontmatter.meta}</Meta>
             <Title>{node.frontmatter.title}</Title>
+            <Meta>{node.frontmatter.date}</Meta>
             <SubTitle>{node.frontmatter.subtitle}</SubTitle>
             <Content>{node.excerpt}</Content>
             <Button><StyledLink to={`/posts${node.fields.slug}`}>

@@ -1,4 +1,5 @@
 ---
+meta: 'News'
 title: 'The 12-steps revisited, again'
 date: '2020-01-05'
 subtitle: 'this is another test subtitle'
