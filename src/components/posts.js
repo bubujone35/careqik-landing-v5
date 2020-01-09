@@ -6,7 +6,7 @@ import styled from "styled-components";
 
 const getMarkdownPosts = graphql`
   {
-    allMarkdownRemark {
+    allMarkdownRemark(limit: 3) {
       totalCount
       edges {
         node {
