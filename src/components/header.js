@@ -82,7 +82,7 @@ const StyledLogo = styled(Link)`
         <Right>
           <NavItem><StyledLink to="/">Patients</StyledLink></NavItem>
           <NavItem><StyledLink to="/">Providers</StyledLink></NavItem>
-          <NavItem><StyledLink to="/">Contact</StyledLink></NavItem>
+          <NavItem><StyledLink to="/">Contam stct</StyledLink></NavItem>
         </Right>
       </NavBar>
       <SubNav>
