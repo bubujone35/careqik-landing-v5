@@ -78,8 +78,7 @@ return (
         name="contact"
         method="post"
         action="/thank-you/"
-        data-netlify="true"
-        data-netlify-honeypot="bot-field"
+        data-netlify
         data-secure
         onSubmit={handleSubmit}
       >
