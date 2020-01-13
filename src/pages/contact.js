@@ -2,6 +2,43 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { navigate } from 'gatsby-link'
+import styled from "styled-components"
+import PrimaryButton from "../components/buttons/primary"
+
+const Wrapper = styled.div`
+  padding: 4rem 2rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 720px;
+`
+const Title = styled.h2`
+  font-size: 3rem;
+  color: rgba(51, 132, 154, 0.95);
+`
+const StyledLabel = styled.label`
+  color: rgba(51, 132, 154, 0.95);
+  font-size: 1.5rem;
+`
+
+const StyledInput = styled.input`
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid rgba(51, 132, 154, 0.95);
+  border-radius: 4px;
+
+`
+const StyledText = styled.textarea`
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid rgba(51, 132, 154);
+  border-radius: 4px;
+  resize: none;
+  height: 150px;
+`
 
 
 function encode(data) {
@@ -35,13 +72,12 @@ export default function Contact() {
 return (
   <Layout>
     <SEO title="Contact" />
-    <h2>This is the contact page</h2>
-
-    <h1>Contact</h1>
+    <Wrapper>
+    <Title>Contact</Title>
       <form
         name="contact"
         method="post"
-        action="/thanks/"
+        action="/thank-you/"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
         onSubmit={handleSubmit}
@@ -54,30 +90,31 @@ return (
           </label>
         </p>
         <p>
-          <label>
-            Your name:
+          <StyledLabel>
+            First name
             <br />
-            <input type="text" name="name" onChange={handleChange} />
-          </label>
+            <StyledInput type="text" name="name" onChange={handleChange} />
+          </StyledLabel>
         </p>
         <p>
-          <label>
-            Your email:
+          <StyledLabel>
+            Email
             <br />
-            <input type="email" name="email" onChange={handleChange} />
-          </label>
+            <StyledInput type="email" name="email" onChange={handleChange} />
+          </StyledLabel>
         </p>
         <p>
-          <label>
-            Message:
+          <StyledLabel>
+            Message
             <br />
-            <textarea name="message" onChange={handleChange} />
-          </label>
+            <StyledText name="message" onChange={handleChange} />
+          </StyledLabel>
         </p>
         <p>
-          <button type="submit">Send</button>
+          <PrimaryButton type="submit">Submit</PrimaryButton>
         </p>
       </form>
+      </Wrapper>
   </Layout>
 )
 }

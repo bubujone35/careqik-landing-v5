@@ -39,3 +39,5 @@ const PrimaryButton = styled.button`
   width: 100%;
   }
 `
+
+export default PrimaryButton; 
