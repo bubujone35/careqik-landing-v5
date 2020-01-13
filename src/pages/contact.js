@@ -77,9 +77,9 @@ return (
       <form
         name="contact"
         method="post"
-        action="/thank-you/"
         data-netlify="true"
-        data-secure="true"
+        data-netlify-honeypot="bot-field"
+        data-secure
         onSubmit={handleSubmit}
       >
         {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
