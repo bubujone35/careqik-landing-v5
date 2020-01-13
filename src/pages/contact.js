@@ -78,8 +78,8 @@ return (
         name="contact"
         method="post"
         action="/thank-you/"
-        data-netlify
-        data-secure
+        data-netlify="true"
+        data-secure="true"
         onSubmit={handleSubmit}
       >
         {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
@@ -112,11 +112,11 @@ return (
         </p>
 
         <p>
-          <StyledLabel>
+          <label>
             Secure Field
             <br />
-            <StyledInput type="text" name="secure" id="secure" data-secure-field onChange={handleChange} />
-          </StyledLabel>
+            <input type="text" name="secure" id="secure" data-secure-field onChange={handleChange} />
+          </label>
         </p>
 
         <p>
