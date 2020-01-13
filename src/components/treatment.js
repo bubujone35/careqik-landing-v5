@@ -1,5 +1,5 @@
 import React from "react";
-import telemed1 from "../images/telemed1.png"
+import doctor from "../images/doctor.png"
 
 import styled from "styled-components";
 
@@ -35,9 +35,6 @@ const Right = styled.div`
   padding: 8rem;
   background-color: #1899AB;
   flex: 2;
-  border-radius: 0px 0px 0px 100px;
-
-  /* justify-content: start; */
 
   @media screen and (max-width:560px) {
   align-items: center;
@@ -122,7 +119,7 @@ const Button = styled.button`
 const Works = () => (
   <>
     <Container>
-      <Left><Image src={telemed1} alt="telepsychiatry" />
+      <Left><Image src={doctor} alt="doctor" />
       </Left>
       <Right>
         <Title>Our treatment offerings</Title>
