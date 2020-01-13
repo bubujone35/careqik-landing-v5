@@ -2,6 +2,7 @@ import React from "react";
 import telemed1 from "../images/telemed1.png"
 
 import styled from "styled-components";
+import { Link } from "gatsby";
 
 const Container = styled.div`
   display: flex;
@@ -76,7 +77,7 @@ const Button = styled.button`
  color: rgba(51, 132, 154, 0.95);
  font-size: 1.7rem;
  font-weight: bold;
- padding: 1.5rem 4rem;
+ padding: 1.5rem 0rem;
  border: 2px solid rgba(249, 209, 106, 1);
  border-radius: 4px;
  outline: none;
@@ -122,6 +123,11 @@ const ImageSmall = styled.img`
   @media screen and (min-width:800px) {
   display: none;
 `
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  color: rgba(51, 132, 154, 0.95);
+`
 
 
  const Banner = () => {
@@ -134,7 +140,7 @@ const ImageSmall = styled.img`
               <Subtitle>Mental healthcare for the modern world, <br/>powered by telemedicine.</Subtitle>
             </Titlewrap>
               <ImageSmall src={telemed1} alt="telepsychiatry" />
-            <Button>Start online intake</Button>
+            <Button><StyledLink to="/contact">Start online intake</StyledLink></Button>
           </Left>
           <Right>
             <Image src={telemed1} alt="telepsychiatry" />

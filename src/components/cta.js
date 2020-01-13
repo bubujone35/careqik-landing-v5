@@ -1,10 +1,11 @@
 import React from "react";
+import { Link } from "gatsby";
 
 import styled from "styled-components";
 
 const Container = styled.div`
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
@@ -36,7 +37,7 @@ const Button = styled.button`
   color: rgba(51, 132, 154, 0.95);
   font-size: 1.7rem;
   font-weight: bold;
-  padding: 1.5rem 4rem;
+  padding: 1.5rem 0rem;
   border: 2px solid rgba(249, 209, 106, 1);
   border-radius: 4px;
   outline: none;
@@ -68,6 +69,11 @@ const Button = styled.button`
   width: 100%;
   }
 `
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  color: rgba(51, 132, 154, 0.95);
+`
 
 const Cta = () => (
   <>
@@ -76,7 +82,7 @@ const Cta = () => (
         <Title>Ready to get started?</Title>
       </Left>
       <Right>
-        <Button>Book appointment</Button>
+        <Button><StyledLink to="/contact">Book appointment</StyledLink></Button>
       </Right>
     </Container>
   </>
