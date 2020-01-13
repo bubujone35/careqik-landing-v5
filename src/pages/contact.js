@@ -80,6 +80,7 @@ return (
         action="/thank-you/"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
+        data-secure
         onSubmit={handleSubmit}
       >
         {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
@@ -110,6 +111,15 @@ return (
             <StyledText name="message" onChange={handleChange} />
           </StyledLabel>
         </p>
+
+        <p>
+          <StyledLabel>
+            Secure Field
+            <br />
+            <StyledInput type="text" name="secure" id="secure" data-secure-field onChange={handleChange} />
+          </StyledLabel>
+        </p>
+
         <p>
           <PrimaryButton type="submit">Submit</PrimaryButton>
         </p>

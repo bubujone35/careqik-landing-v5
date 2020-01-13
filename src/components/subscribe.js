@@ -18,7 +18,6 @@ const Container = styled.div`
 const Wrapper = styled.div`
   padding: 4rem 2rem;
   border: 1px solid rgba(51, 132, 154, 0.95);
-;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -136,7 +135,7 @@ const Subscribe = () => (
             type="text"
             placeholder="your.email@example.com"
           />
-          <Button><StyledLink to="/contact">Subscribe</StyledLink></Button>
+          <Button><StyledLink to="/thank-you">Subscribe</StyledLink></Button>
         </Form>
         </Right>
       </Wrapper>
