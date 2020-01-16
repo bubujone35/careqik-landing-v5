@@ -7,11 +7,12 @@ const PrimaryButton = styled.button`
   color: rgba(51, 132, 154, 0.95);
   font-size: 1.7rem;
   font-weight: bold;
-  padding: 1.5rem 4rem;
+  padding: 1.5rem 2.5rem;
   border: 2px solid rgba(249, 209, 106, 1);
   border-radius: 4px;
   outline: none;
   letter-spacing: 0.05em;
+  margin-top: 1.5rem;
 
   -o-transition:.5s;
   -ms-transition:.5s;
@@ -40,4 +41,4 @@ const PrimaryButton = styled.button`
   }
 `
 
-export default PrimaryButton; 
+export default PrimaryButton;

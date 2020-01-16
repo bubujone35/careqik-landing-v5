@@ -1,5 +1,6 @@
 import React from "react";
 import telemed1 from "../images/telemed1.png"
+import PrimaryButton from "../components/buttons/primary"
 
 import styled from "styled-components";
 import { Link } from "gatsby";
@@ -60,56 +61,6 @@ const Titlewrap = styled.div`
 
 `
 
-const Button = styled.button`
-  /* padding: 1.5rem 4rem;
-  border: none;
-  cursor: pointer;
-  font-weight: 600;
-  margin-top: 5rem;
-  font-size: 1.8rem;
-  color: white;
-  border-radius: 2px;
-  border: 1.5px solid white;
-  background-color: #1899AB;
-  letter-spacing: 0.2px;
- */
- background: #FBE6B0;
- color: rgba(51, 132, 154, 0.95);
- font-size: 1.7rem;
- font-weight: bold;
- padding: 1.5rem 0rem;
- border: 2px solid rgba(249, 209, 106, 1);
- border-radius: 4px;
- outline: none;
- letter-spacing: 0.05em;
- margin-top: 5rem;
-
- -o-transition:.5s;
- -ms-transition:.5s;
- -moz-transition:.5s;
- -webkit-transition:.5s;
- transition:.3s;
- -webkit-backface-visibility: hidden;
- /* -webkit-transform: translateZ(0) scale(1.0, 1.0); */
- /* for some reason the above causes the CTA button to overlay ontop of the subnav component */
-
- &:hover {
-   color: #FDFDFD;
-   background: rgba(249, 209, 106, 1);
-   border: 2px solid #FBE6B0;
-   transform: translateY(-3px);
-   /* box-shadow: 0px 2px 10px rgba(188, 47, 174, 0.49); */
-   box-shadow: 0px 4px 16px rgba(79, 71, 51, 0.2);
- }
-
- &:active {
-   transform: translateY(-1px);
-   }
- }
-
-  @media screen and (max-width:560px) {
-  padding: 1rem 6rem;
-`
 const Image = styled.img`
   max-width: 30rem;
   min-width: 12rem;
@@ -140,7 +91,7 @@ const StyledLink = styled(Link)`
               <Subtitle>Mental healthcare for the modern world, <br/>powered by telemedicine.</Subtitle>
             </Titlewrap>
               <ImageSmall src={telemed1} alt="telepsychiatry" />
-            <Button><StyledLink to="/contact">Start online intake</StyledLink></Button>
+            <PrimaryButton><StyledLink to="/contact">Start online intake</StyledLink></PrimaryButton>
           </Left>
           <Right>
             <Image src={telemed1} alt="telepsychiatry" />

@@ -6,7 +6,6 @@ export const Input = styled.input.attrs(props => ({
 }))`
   font-size: 1rem;
   padding: 1.7rem;
-  margin: 1rem;
   width: 100%;
   max-width: 600px;
   overflow: hidden;

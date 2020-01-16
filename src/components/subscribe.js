@@ -1,6 +1,7 @@
 import React from "react";
 import { Input, Message } from "./inputs/input"
 import { Link } from "gatsby";
+import PrimaryButton from "../components/buttons/primary"
 
 import styled from "styled-components";
 
@@ -135,7 +136,7 @@ const Subscribe = () => (
             type="text"
             placeholder="your.email@example.com"
           />
-          <Button><StyledLink to="/thank-you">Subscribe</StyledLink></Button>
+          <PrimaryButton><StyledLink to="/thank-you">Subscribe</StyledLink></PrimaryButton>
         </Form>
         </Right>
       </Wrapper>
