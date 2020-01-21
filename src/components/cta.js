@@ -12,18 +12,27 @@ const Container = styled.div`
   align-items: center;
   padding: 8rem 2rem;
   background-color: #FAFAFA;
-  /* margin-top: 4rem; */
+`
 
-`
-const Left = styled.div`
-  padding: 2rem
-`
-const Right = styled.div`
-  padding: 2rem;
+const Wrapper = styled.div`
+  padding: 4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  border-radius: 8px;
+  background: white;
+  border: 1px solid #F6F6F6;
+  box-shadow: 0px 0px 32px rgba(25, 154, 171, 0.15);
+
   @media screen and (max-width:560px) {
   padding: 1rem;
-  }
+  border: none;
+}
 `
+
 const Title = styled.h3`
   font-size: 5rem;
   color: rgba(51, 132, 154, 0.95);
@@ -42,12 +51,12 @@ const StyledLink = styled(Link)`
 const Cta = () => (
   <>
     <Container>
-      <Left>
-        <Title>Ready to get started?</Title>
-      </Left>
-      <Right>
-        <PrimaryButton><StyledLink to="/contact">Book appointment</StyledLink></PrimaryButton>
-      </Right>
+      <Wrapper>
+          <Title>Ready to get started?</Title>
+          <PrimaryButton>
+            <StyledLink to="/contact">Book appointment</StyledLink>
+          </PrimaryButton>
+      </Wrapper>
     </Container>
   </>
    )
