@@ -1,6 +1,7 @@
 import React from "react";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { StaticQuery, graphql, Link } from 'gatsby'
+import PrimaryCard from '../components/cards/primary-card'
 
 import styled from "styled-components";
 
@@ -87,36 +88,7 @@ const Title = styled.h1`
   color: rgba(51, 132, 154, 0.95);
   line-height: 1.2;
 `
-const SubTitle = styled.h3`
-  font-size: 1.6rem;
-  color: rgba(0, 0, 0, 0.54);
-  margin-top: 1rem;
-`
-const Meta = styled.h4`
-  font-size: 1.4rem;
-  text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.54);
-  margin-left: 0.1rem;
-`
-const Content = styled.p`
-  font-size: 1.5rem;
-  margin: 1rem 0rem;
-  color: rgba(0, 0, 0, 0.75);
-`
-const Button = styled.button`
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  border: none;
-  text-align: start;
-  margin: 1rem 0rem;
-  font-size: 1.5rem;
-  cursor: pointer;
-  font-weight: 600;
-  color: rgba(51, 132, 154, 0.99);
-  background-color: transparent;
-`
+
 const StyledLink = styled(Link)`
   color: #4E888C;
   text-decoration: none;
@@ -138,16 +110,14 @@ const Posts = () => (
       </Blog>
         <Container>
           {data.allMarkdownRemark.edges.map(({ node }) =>(
-          <Card key={node.id}>
-            <Meta>{node.frontmatter.meta}</Meta>
-            <Title>{node.frontmatter.title}</Title>
-            <Meta>{node.frontmatter.date}</Meta>
-            <SubTitle>{node.frontmatter.subtitle}</SubTitle>
-            <Content>{node.excerpt}</Content>
-            <Button><StyledLink to={`/posts${node.fields.slug}`}>
-            Read more</StyledLink><IoIosArrowRoundForward size={26}/>
-            </Button>
-          </Card>
+            <PrimaryCard
+              title={node.frontmatter.title}
+              meta={node.frontmatter.date}
+              subtitle={node.frontmatter.subtitle}
+              content={node.excerpt}
+              button=<StyledLink to={`/posts${node.fields.slug}`}>
+                Read more</StyledLink>
+            />
         ))}
         </Container>
       </Wrapper>
