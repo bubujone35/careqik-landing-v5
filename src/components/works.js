@@ -2,6 +2,7 @@ import React from "react";
 import { FaUserPlus } from 'react-icons/fa';
 import { FaClipboard } from 'react-icons/fa';
 import { FaCalendarDay } from 'react-icons/fa';
+import PrimaryCard from '../components/cards/primary-card'
 
 import styled from "styled-components";
 
@@ -11,7 +12,7 @@ const Container = styled.div`
   align-items: center;
   background-color: #FAFAFA;
   flex-wrap: wrap;
-  padding: 1rem;
+  padding: 4rem;
 
   /* @media screen and (max-width:1000px) {
   flex-direction: column;
@@ -23,6 +24,7 @@ const Header = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0rem;
+  background: white;
 `
 const Heading = styled.h2`
   font-size: 3.5rem;
@@ -36,8 +38,13 @@ const Section = styled.div`
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 0rem 2.5rem 2.5rem 2.5rem;
+  padding: 6rem 4rem;
   width: 300px;
+  background: white;
+
+  border: 1px solid #F6F6F6;
+  border-radius: 8px;
+  box-shadow: 0px 0px 32px rgba(25, 154, 171, 0.15);
 `
 const Title = styled.h3`
   font-size: 2rem;

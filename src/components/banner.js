@@ -48,7 +48,7 @@ const Title = styled.h1`
 const Subtitle = styled.h3`
   font-size: 2rem;
   font-weight: 400;
-  margin-top: 1.5rem;
+  margin: 2rem 0;
 
   @media screen and (max-width:720px) {
   margin-top: 2rem;

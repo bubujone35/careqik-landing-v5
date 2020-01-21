@@ -79,7 +79,7 @@ const Card = styled.div`
   margin: 0.5rem;
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
   flex: 1 1 350px;
-  background: linear-gradient(90.4deg, #FCFFDB 0.26%, #FFF5BE 99.71%);
+  background: rgba(255, 253, 240, 1);
 
 `
 const Title = styled.h1`
@@ -101,7 +101,7 @@ const Meta = styled.h4`
 const Content = styled.p`
   font-size: 1.5rem;
   margin: 1rem 0rem;
-  color: rgba(0, 0, 0, 0.9);
+  color: rgba(0, 0, 0, 0.75);
 `
 const Button = styled.button`
   display: flex;
