@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import PrimaryButton from "../buttons/primary"
+import SecondaryButton from "../buttons/secondary"
 import { Link } from "gatsby";
 
 const Card = styled.div`
@@ -11,7 +11,7 @@ const Card = styled.div`
   box-shadow: 0px 0px 32px rgba(25, 154, 171, 0.15);
   flex: 1 1 350px;
   border: 1px solid #F6F6F6;
-  background: rgba(255, 253, 240, 1); 
+  background: rgba(255, 253, 240, 1);
 `
 
 const Title = styled.h1`
@@ -40,7 +40,7 @@ const PrimaryCard = (props) => (
     <SubTitle>{props.subtitle}</SubTitle>
     <Meta>{props.meta}</Meta>
     <Content>{props.content}</Content>
-    <PrimaryButton>{props.button}</PrimaryButton>
+    <SecondaryButton>{props.button}</SecondaryButton>
   </Card>
 )
 
