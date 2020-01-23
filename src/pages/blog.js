@@ -41,6 +41,7 @@ const getMarkdownPosts = graphql`
   }
 `
 
+
 export default () => (
   <Layout>
     <Wrapper>
@@ -49,15 +50,6 @@ export default () => (
         render={data => (
           <>
             {data.allMarkdownRemark.edges.map(({ node }) => (
-              // <Card key={node.id}>
-              //   <Meta>{node.frontmatter.meta}</Meta>
-              //   <Title>{node.frontmatter.title}</Title>
-              //   <Meta>{node.frontmatter.date}</Meta>
-              //   <SubTitle>{node.frontmatter.subtitle}</SubTitle>
-              //   <Content>{node.excerpt}</Content>
-              //   <Button><StyledLink to={`/posts${node.fields.slug}`}>
-              //   Read more</StyledLink></Button>
-              // </Card>
               <PrimaryCard
                 title={node.frontmatter.title}
                 meta={node.frontmatter.date}

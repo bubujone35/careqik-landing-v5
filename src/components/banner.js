@@ -9,7 +9,7 @@ const Container = styled.div`
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  min-height: 70vh;
+  min-height: 60vh;
   background-color: #1899AB;
 `
 const Left = styled.div`

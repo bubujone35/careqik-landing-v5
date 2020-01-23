@@ -3,7 +3,7 @@ import React from "react";
 import styled from "styled-components";
 
 
-const PrimaryButton = styled.button`
+const StyledButton = styled.button`
   background: #FBE6B0;
   color: rgba(51, 132, 154, 0.95);
   font-size: 1.7rem;
@@ -39,7 +39,14 @@ const PrimaryButton = styled.button`
 
   @media screen and (max-width:560px) {
   width: 100%;
+  padding: 1.5rem 2rem;
+
   }
 `
+const PrimaryButton = ({ children, ...otherProps}) => (
+  <StyledButton {...otherProps}>
+    {children}
+  </StyledButton>
+)
 
 export default PrimaryButton;

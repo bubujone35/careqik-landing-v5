@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 import doctor from "../images/doctor.png"
 
 import styled from "styled-components";
@@ -6,9 +7,8 @@ import styled from "styled-components";
 const Container = styled.div`
   display: flex;
   justify-content: space-around;
-  /* align-items: center; */
+  /* align-items: start; */
   flex-wrap: wrap;
-
 `
 const Left = styled.div`
   display: flex;
@@ -115,6 +115,10 @@ const Button = styled.button`
   width: 100%;
 }
 `
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: white; 
+`
 
 const Works = () => (
   <>
@@ -130,7 +134,7 @@ const Works = () => (
           <ListItem>Individual therapy</ListItem>
           <ListItem>Family therapy</ListItem>
         </List>
-        <Button>Learn more</Button>
+        <Button><StyledLink to="/treatment">Learn more</StyledLink></Button>
       </Right>
     </Container>
   </>

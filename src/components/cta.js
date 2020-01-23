@@ -10,8 +10,13 @@ const Container = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-  padding: 8rem 2rem;
+  padding: 6rem 4.5rem;
   background-color: #FAFAFA;
+
+  @media screen and (max-width:720px) {
+  padding: 4rem 2rem; 
+
+}
 `
 
 const Wrapper = styled.div`
@@ -34,8 +39,9 @@ const Wrapper = styled.div`
 `
 
 const Title = styled.h3`
-  font-size: 5rem;
+  font-size: 4.5rem;
   color: rgba(51, 132, 154, 0.95);
+  letter-spacing: 1px;
 
   @media screen and (max-width:720px) {
   font-size: 2.5rem;

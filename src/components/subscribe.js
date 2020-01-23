@@ -18,7 +18,7 @@ const Container = styled.div`
 }
 `
 const Wrapper = styled.div`
-  padding: 4rem 1rem;
+  padding: 4rem 2rem;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;

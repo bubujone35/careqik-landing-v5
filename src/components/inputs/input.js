@@ -12,7 +12,7 @@ export const Input = styled.input.attrs(props => ({
   outline: none;
   border-width: 1px;
   border-style: solid;
-  border-color: ${props => props.error ? '#E84D38' : 'green'};
+  border-color: ${props => props.error ? '#E84D38' : '#1899AB'};
   border-radius: 4px;
   &:focus {
   background-color: #FCFCFC;

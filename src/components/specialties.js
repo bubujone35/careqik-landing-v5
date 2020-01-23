@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby"; 
 import monitor from "../images/monitor.png"
 
 import styled from "styled-components";
@@ -127,6 +128,10 @@ transition:.3s;
 width: 100%;
 }
 `
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: white;
+`
 
 const Specialties = () => (
   <>
@@ -152,7 +157,7 @@ const Specialties = () => (
           </List>
         </Second>
       </ListContainer>
-      <Button>Learn more</Button>
+      <Button><StyledLink to="/specialties">Learn more</StyledLink></Button>
       </Left>
       <Right>
         <Image src={monitor} alt="monitor" />
