@@ -79,16 +79,8 @@ return (
         method="post"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
-        data-secure
         onSubmit={handleSubmit}
       >
-        {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
-        <input type="hidden" name="form-name" value="contact" />
-        <p hidden>
-          <label>
-            Don’t fill this out: <input name="bot-field" onChange={handleChange} />
-          </label>
-        </p>
         <p>
           <StyledLabel>
             First name
@@ -109,15 +101,6 @@ return (
             <br />
             <StyledText name="message" onChange={handleChange} />
           </StyledLabel>
-        </p>
-
-        <p>
-          <label>
-            Secure Field
-            <br />
-            // <input type="text" name="secure" id="secure" data-secure-field onChange={handleChange} />
-            <input type="text" name="secure" id="secure" data-secure-field />
-          </label>
         </p>
 
         <p>
