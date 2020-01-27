@@ -36,7 +36,12 @@ const IndexPage = () => (
       data-netlify
       data-secure
     >
-      <input type="hidden" name="form-name" value="contact" />
+    <input type="hidden" name="form-name" value="contact" />
+      <p hidden>
+        <label>
+          Don’t fill this out: <input name="bot-field"/>
+        </label>
+      </p>
       <p>
         <label for="name">Basic Field</label>
         <input type="text" name="name" id="name" />
