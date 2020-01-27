@@ -115,7 +115,8 @@ return (
           <label>
             Secure Field
             <br />
-            <input type="text" name="secure" id="secure" data-secure-field onChange={handleChange} />
+            // <input type="text" name="secure" id="secure" data-secure-field onChange={handleChange} />
+            <input type="text" name="secure" id="secure" data-secure-field />
           </label>
         </p>
 

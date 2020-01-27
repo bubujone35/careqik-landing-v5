@@ -4,6 +4,13 @@ import { Link, graphql } from "gatsby"
 import styled from "styled-components"
 import PrimaryCard from '../components/cards/primary-card'
 
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6rem 0rem; 
+`
+
 const StyledLink = styled(Link)`
   text-decoration: none;
   color: white;
@@ -11,7 +18,7 @@ const StyledLink = styled(Link)`
 
 export default ({ data: post }) => (
   <Layout>
-    <div>
+  <Wrapper>
       <PrimaryCard
         title={post.markdownRemark.frontmatter.title}
         meta={post.markdownRemark.frontmatter.date}
@@ -20,7 +27,7 @@ export default ({ data: post }) => (
       />
 
       <div dangerouslySetInnerHTML={{__html: post.html}} />
-    </div>
+    </Wrapper>
   </Layout>
 )
 

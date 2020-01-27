@@ -12,6 +12,7 @@ const Card = styled.div`
   flex: 1 1 350px;
   border: 1px solid #F6F6F6;
   background: rgba(255, 253, 240, 1);
+  max-width: 1200px; 
 `
 
 const Title = styled.h1`
