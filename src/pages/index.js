@@ -33,7 +33,7 @@ const IndexPage = () => (
       name="contact"
       method="post"
       autocomplete="off"
-      data-netlify="true"
+      data-netlify
       data-secure
       >
       <input type="hidden" name="form-name" value="contact" />
