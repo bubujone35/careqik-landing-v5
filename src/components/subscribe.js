@@ -84,7 +84,7 @@ const Subscribe = () => (
           <Subtitle>Stay updated about all things Careqik</Subtitle>
         </Left>
         <Right>
-        <Form name="newsletter" method="POST" data-netlify="true">
+        <Form name="newsletter" method="POST" data-netlify data-netlify-honeypot="bot-field">
 
           <Input
             for="email"
