@@ -8,16 +8,17 @@ import SocialCard from "../components/cards/social-card"
 
 const Wrapper = styled.div`
   display: flex;
+  align-items: center;
   flex-direction: column;
   padding: 2rem;
-  align-items: center;
-
 `
+
 
 const Providers = () => (
   <Layout>
     <SEO title="Providers" />
     <Wrapper>
+
       <SocialCard
         title="Dr. Maria Swanson"
         subtitle="Psychiatric nurse practitioner"

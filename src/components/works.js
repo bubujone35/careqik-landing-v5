@@ -14,9 +14,10 @@ const Container = styled.div`
   flex-wrap: wrap;
   padding: 4rem;
 
-  /* @media screen and (max-width:1000px) {
+  @media screen and (max-width:1000px) {
   flex-direction: column;
-} */
+  padding: 1rem;
+}
 `
 const Header = styled.div`
   background-color: #FAFAFA;
@@ -46,6 +47,11 @@ const Section = styled.div`
   border: 1px solid #F6F6F6;
   border-radius: 8px;
   box-shadow: 0px 0px 32px rgba(25, 154, 171, 0.15);
+
+  @media screen and (max-width:1000px) {
+  width: 95%;
+  margin: 1rem; 
+}
 `
 const Title = styled.h3`
   font-size: 2rem;

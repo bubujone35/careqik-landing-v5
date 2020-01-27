@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "gatsby"; 
+import { Link } from "gatsby";
 import monitor from "../images/monitor.png"
 
 import styled from "styled-components";
@@ -14,12 +14,12 @@ const Left = styled.div`
   display: flex;
   flex-direction: column;
   align-items: start;
-  padding: 8rem;
+  padding: 6rem;
   background-color: #1899AB;
   flex: 2;
 
   @media screen and (max-width:560px) {
-  align-items: center;
+  align-items: start;
   padding: 2rem;
   border-radius: 0px 0px 0px 0px;
 
@@ -28,8 +28,8 @@ const Left = styled.div`
 const Right = styled.div`
 display: flex;
 flex-direction: column;
-align-items: center;
-padding: 8rem;
+align-items: start;
+padding: 6rem;
 justify-content: center;
 flex: 1;
 

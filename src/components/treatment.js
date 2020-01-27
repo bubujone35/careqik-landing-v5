@@ -13,7 +13,7 @@ const Container = styled.div`
 const Left = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   padding: 8rem;
   justify-content: center;
   flex: 1;
@@ -24,22 +24,35 @@ const Left = styled.div`
 
   @media screen and (max-width:560px) {
   align-items: center;
-  padding: 2rem;
 
   }
 `
+
+// display: flex;
+// flex-direction: column;
+// align-items: start;
+// padding: 6rem;
+// background-color: #1899AB;
+// flex: 2;
+//
+// @media screen and (max-width:560px) {
+// align-items: center;
+// padding: 2rem;
+// border-radius: 0px 0px 0px 0px;
+//
+// }
+
 const Right = styled.div`
   display: flex;
   flex-direction: column;
   align-items: start;
-  padding: 8rem;
+  padding: 6rem;
   background-color: #1899AB;
   flex: 2;
 
   @media screen and (max-width:560px) {
-  align-items: center;
+  align-items: start;
   padding: 2rem;
-  border-radius: 0px 0px 0px 0px;
 
   }
 `
@@ -117,7 +130,7 @@ const Button = styled.button`
 `
 const StyledLink = styled(Link)`
   text-decoration: none;
-  color: white; 
+  color: white;
 `
 
 const Works = () => (
