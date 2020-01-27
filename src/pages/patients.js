@@ -39,7 +39,6 @@ export default function Contact() {
         action="/thank-you"
         autocomplete="off"
         data-netlify="true"
-        data-netlify-honeypot="bot-field"
         onSubmit={handleSubmit}
       >
         {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
@@ -76,7 +75,7 @@ export default function Contact() {
          <label for="ssn">Secure Field</label>
          <input type="text" name="secure" id="ssn" data-secure-field />
         </p>
-        
+
 
         <p>
           <button type="submit">Send</button>
