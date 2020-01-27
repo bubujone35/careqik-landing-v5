@@ -33,9 +33,10 @@ const IndexPage = () => (
       name="contact"
       method="post"
       autocomplete="off"
-      data-netlify
+      data-netlify="true"
       data-secure
       >
+      <input type="hidden" name="form-name" value="contact" />
       <p>
         <label for="name">Basic Field</label>
         <input type="text" name="name" id="name" />
