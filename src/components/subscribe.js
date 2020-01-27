@@ -94,6 +94,7 @@ const Subscribe = () => (
           />
           <PrimaryButton type="submit"><StyledLink to="/thank-you">Subscribe</StyledLink></PrimaryButton>
         </Form>
+        
         </Right>
       </Wrapper>
     </Container>
