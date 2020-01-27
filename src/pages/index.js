@@ -26,16 +26,16 @@ const IndexPage = () => (
     <Posts />
     <Subscribe />
     <Floating />
-    <div>
-      <h3>Secure Form</h3>
+    <h3>Secure Form</h3>
 
-      <form
+    <form
       name="contact"
       method="post"
       autocomplete="off"
+      data-netlify-honeypot="bot-field"
       data-netlify
       data-secure
-      >
+    >
       <input type="hidden" name="form-name" value="contact" />
       <p>
         <label for="name">Basic Field</label>
@@ -52,7 +52,6 @@ const IndexPage = () => (
         </button>
       </p>
     </form>
-    </div>
   </Layout>
 )
 
