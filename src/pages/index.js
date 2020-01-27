@@ -28,7 +28,23 @@ const IndexPage = () => (
     <Floating />
     <div>
       <h3>Secure Form</h3>
-      <form name="contact" method="post" netlify-honeypot="b" autocomplete="off" data-netlify data-secure>
+
+      <form
+        name="contact"
+        method="post"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+        data-secure
+        onSubmit={handleSubmit}
+      >
+
+      <input type="hidden" name="form-name" value="contact" />
+      <p hidden>
+        <label>
+          Don’t fill this out: <input name="bot-field" onChange={handleChange} />
+        </label>
+      </p>
+
         <p>
           <label for="name">Basic Field</label>
           <input type="text" name="name" id="name" />
