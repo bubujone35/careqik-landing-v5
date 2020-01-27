@@ -26,33 +26,31 @@ const IndexPage = () => (
     <Posts />
     <Subscribe />
     <Floating />
-    <div>
-      <h3>Secure Form</h3>
+    <h3>Secure Form</h3>
 
-      <form
-        name="contact"
-        method="post"
-        autocomplete="off"
-        data-netlify
-        data-secure
-      >
-        <input type="hidden" name="form-name" value="contact" />
-        <p>
-          <label for="name">Basic Field</label>
-          <input type="text" name="name" id="name" />
-        </p>
+    <form
+      name="contact"
+      method="post"
+      autocomplete="off"
+      data-netlify
+      data-secure
+    >
+      <input type="hidden" name="form-name" value="contact" />
+      <p>
+        <label for="name">Basic Field</label>
+        <input type="text" name="name" id="name" />
+      </p>
 
-        <p>
-          <label for="ssn">Secure Field</label>
-          <input type="text" name="ssn" id="ssn" data-secure-field />
-        </p>
-        <p>
-          <button type="submit" id="submit">
-            Send
-          </button>
-        </p>
-      </form>
-    </div>
+      <p>
+        <label for="ssn">Secure Field</label>
+        <input type="text" name="secure" id="ssn" data-secure-field />
+      </p>
+      <p>
+        <button type="submit" id="submit">
+          Send
+        </button>
+      </p>
+    </form>
   </Layout>
 )
 
