@@ -41,7 +41,7 @@ const Section = styled.div`
   padding: 6rem 4rem;
   width: 300px;
   background: white;
-  margin: 1.5rem; 
+  margin: 1.5rem;
 
   border: 1px solid #F6F6F6;
   border-radius: 8px;
@@ -93,5 +93,6 @@ const Works = () => (
     </Container>
   </>
    )
+
 
  export default Works;

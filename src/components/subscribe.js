@@ -84,19 +84,22 @@ const Subscribe = () => (
           <Subtitle>Stay updated about all things Careqik</Subtitle>
         </Left>
         <Right>
-        <Form>
+        <Form name="newsletter" method="POST" data-netlify="true">
+
           <Input
             for="email"
             name="email"
             type="text"
             placeholder="your.email@example.com"
           />
-          <PrimaryButton><StyledLink to="/thank-you">Subscribe</StyledLink></PrimaryButton>
+          <PrimaryButton type="submit"><StyledLink to="/thank-you">Subscribe</StyledLink></PrimaryButton>
         </Form>
         </Right>
       </Wrapper>
     </Container>
   </>
    )
+
+
 
  export default Subscribe;
