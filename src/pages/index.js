@@ -32,6 +32,7 @@ const IndexPage = () => (
       name="contact"
       method="post"
       autocomplete="off"
+      data-netlify-honeypot="bot-field"
       data-netlify
       data-secure
     >
