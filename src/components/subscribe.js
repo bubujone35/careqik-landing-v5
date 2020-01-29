@@ -12,7 +12,6 @@ const Container = styled.div`
   /* justify-content: space-between; */
   flex-wrap: wrap;
 
-
   @media screen and (max-width:560px) {
   padding: 0rem;
 }
@@ -94,7 +93,7 @@ const Subscribe = () => (
           />
           <PrimaryButton type="submit"><StyledLink to="/thank-you">Subscribe</StyledLink></PrimaryButton>
         </Form>
-        
+
         </Right>
       </Wrapper>
     </Container>

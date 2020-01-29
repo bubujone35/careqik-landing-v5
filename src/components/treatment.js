@@ -13,7 +13,7 @@ const Container = styled.div`
 const Left = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: center;
   padding: 8rem;
   justify-content: center;
   flex: 1;

@@ -8,7 +8,7 @@ import Layout from '../components/layout'
 
 const Wrapper = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   padding: 8rem;
 `
