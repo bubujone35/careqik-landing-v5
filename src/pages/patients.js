@@ -29,7 +29,6 @@ const Patients = () => (
         email="ryan@careqik.com"
         phone="914-444-4444"
         website="www.careqik.com"
-        facebookUrl="www.facebook.com"
       >
       </ProfileCard>
     </Wrapper>

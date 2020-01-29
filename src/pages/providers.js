@@ -4,8 +4,6 @@ import SEO from "../components/seo"
 import styled from "styled-components"
 
 
-import SocialCard from "../components/cards/social-card"
-
 const Wrapper = styled.div`
   display: flex;
   align-items: center;
@@ -17,30 +15,10 @@ const Wrapper = styled.div`
 const Providers = () => (
   <Layout>
     <SEO title="Providers" />
-    <Wrapper>
 
-      <SocialCard
-        title="Dr. Maria Swanson"
-        subtitle="Psychiatric nurse practitioner"
-      />
-
-      <SocialCard
-        title="Dr. Kimberly Maria Jones"
-        subtitle="Psychiatric nurse practitioner"
-      />
-
-      <SocialCard
-        title="Dr. Young Jumangi"
-        subtitle="Psychiatric nurse practitioner"
-      />
-
-      <SocialCard
-        title="Dr. Jackson Pollack"
-        subtitle="Psychiatric nurse practitioner"
-      />
-    </Wrapper>
+    <div>this is the providers page</div>
 
   </Layout>
 )
 
-export default Providers
+export default Providers;

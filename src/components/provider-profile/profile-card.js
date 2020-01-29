@@ -92,19 +92,19 @@ const ProfileCard = (props) => (
       <Phone>{props.phone}</Phone>
       <Website>{props.website}</Website>
       <Social>
-        <SocialItem href="{`props.facebookURL`}" target="_blank" rel="noopener noreferrer" title="Facebook">
+        <SocialItem href="www.facebook.com" target="_blank" rel="noopener noreferrer" title="Facebook">
           <FaFacebookF size={26}/>
         </SocialItem>
 
-        <SocialItem href="{props.facebookURL}" target="_blank" rel="noopener noreferrer" title="Facebook">
+        <SocialItem href="www.facebook.com" target="_blank" rel="noopener noreferrer" title="Facebook">
           <FaLinkedinIn size={26}/>
         </SocialItem>
 
-        <SocialItem href="{props.facebookURL}" target="_blank" rel="noopener noreferrer" title="Facebook">
+        <SocialItem href="www.facebook.com" target="_blank" rel="noopener noreferrer" title="Facebook">
           <FaInstagram size={26}/>
         </SocialItem>
 
-        <SocialItem href="{props.facebookURL}" target="_blank" rel="noopener noreferrer" title="Facebook">
+        <SocialItem href="www.facebook.com" target="_blank" rel="noopener noreferrer" title="Facebook">
           <FaMediumM size={26}/>
         </SocialItem>
       </Social>
