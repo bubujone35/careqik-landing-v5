@@ -4,6 +4,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaMediumM } from "react-icons/fa";
+import doctor from "../../images/doctor.png"
 
 
 
@@ -13,12 +14,21 @@ import styled from 'styled-components'
 const Card = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   padding: 4rem;
-  background-color: lightgray;
-  border: solid 1px darkgray;
-  border-radius: 8px;
-  min-width: 360px;
+  margin: 1rem;
+  width: 100%: 
+
+`
+const Meta = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
+
+const Avatar = styled.img`
+  max-height: 12rem;
+  max-width: 12rem;
 `
 
 const Name = styled.h3`
@@ -33,8 +43,12 @@ const TagWrapper = styled.div`
   background-color: white;
   width: 100%;
 `
+const Info = styled.div`
+
+`
+
 const Contact = styled.div`
-  background-color: gray;
+  /* background-color: gray; */
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -59,12 +73,13 @@ const Website = styled.p`
 const Social = styled.div`
   display: flex;
   justify-content: start;
-  background-color: red;
+  /* background-color: red; */
+  margin-top: 4rem;
 `
 const SocialItem = styled.a`
   margin: 1rem;
   display: inline-block;
-  color: white;
+  color: black;
   text-decoration: none;
   &:hover {
     color: #3A7174;
@@ -79,6 +94,8 @@ const SocialItem = styled.a`
 
 const ProfileCard = (props) => (
   <Card>
+  <Meta>
+    <Avatar src={doctor} alt="doctor"/>
     <Name>{props.name}</Name>
     <SubTitle>{props.subtitle}</SubTitle>
     <TagWrapper>
@@ -86,6 +103,8 @@ const ProfileCard = (props) => (
       <PrimaryTag>{props.tag2}</PrimaryTag>
       <PrimaryTag>{props.tag3}</PrimaryTag>
     </TagWrapper>
+  </Meta>
+  <Info>
     <Contact>
       <Location>{props.location}</Location>
       <Email>{props.email}</Email>
@@ -109,6 +128,7 @@ const ProfileCard = (props) => (
         </SocialItem>
       </Social>
     </Contact>
+    </Info>
   </Card>
 )
 
