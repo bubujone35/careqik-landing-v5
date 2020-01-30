@@ -12,8 +12,8 @@ import styled from 'styled-components'
 const Wrapper = styled.div`
   display: flex;
   justify-content: space-around;
-  padding: 4rem;
-  min-height: 100vh;
+  padding: 4rem 2rem;
+  min-height: 75vh;
   @media screen and (max-width:1000px) {
   flex-wrap: wrap;
 }
@@ -32,9 +32,9 @@ const Patients = () => (
         <ProfileCard
           name="Dr. Ryan Lee"
           subtitle="Psychiatric Nurse Practitioner"
-          tag1="depression"
-          tag2="anxiety"
-          tag3="addiction"
+          tag1="#depression"
+          tag2="#anxiety"
+          tag3="#addiction"
           location="Chicago, IL"
           email="ryan@careqik.com"
           phone="914-444-4444"
@@ -50,7 +50,15 @@ const Patients = () => (
             content="Delenit augue duis dolore te feugait nulla facilisi nam liber tempor cum soluta nobis eleifend. Enim ad minim veniam quis nostrud exerci tation ullamcorper suscipit lobortis. Sequitur mutationem consuetudium lectorum mirum est notare quam littera gothica quam nunc. Consequat duis autem vel eum iriure dolor in."
           />
         </MainContent>
-        <SideBar />
+        <SideBar
+          monHours="8:00-4:00pm"
+          tuesHours="8:00-4:00pm"
+          wedsHours="8:00-4:00pm"
+          thursHours="8:00-4:00pm"
+          friHours="8:00-4:00pm"
+          satHours="8:00-4:00pm"
+          sunHours="8:00-4:00pm"
+        />
 
     </Wrapper>
   </Layout>

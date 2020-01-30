@@ -4,9 +4,11 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaMediumM } from "react-icons/fa";
+import { FaMapMarkerAlt } from "react-icons/fa";
+import { FaEnvelope } from "react-icons/fa";
+import { FaPhone } from "react-icons/fa";
+import { FaGlobeAmericas } from "react-icons/fa";
 import doctor from "../../images/doctor.png"
-
-
 
 import styled from 'styled-components'
 
@@ -15,9 +17,15 @@ const Card = styled.div`
   display: flex;
   flex-direction: column;
   align-items: start;
-  padding: 4rem;
+  padding: 1rem;
   margin: 1rem;
-  width: 100%: 
+  width: 100%:
+  flex: 0;
+
+  @media screen and (max-width:670px) {
+  align-items: center;
+
+}
 
 `
 const Meta = styled.div`
@@ -38,48 +46,58 @@ const SubTitle = styled.p`
   font-size: 1.5rem;
 `
 const TagWrapper = styled.div`
+  padding: 2rem 0rem;
   display: flex;
-  justify-content: center;
-  background-color: white;
-  width: 100%;
+  align-items: center;
 `
-const Info = styled.div`
-
-`
-
 const Contact = styled.div`
-  /* background-color: gray; */
   display: flex;
   flex-direction: column;
-  width: 100%;
   padding: 1rem;
+  flex: 1;
 `
+const Icon = styled.div`
+  display: flex;
+  color: #FD8686;
+  margin-right: 1.5rem;
+  align-items: center;
+`
+
 const Location = styled.p`
+  display: flex;
+  align-items: center;
   font-size: 1.5rem;
   margin: 1rem;
 `
-const Email = styled.p`
+const Email = styled.a`
+  display: flex;
+  align-items: center;
   font-size: 1.5rem;
   margin: 1rem;
 `
 const Phone = styled.p`
+  display: flex;
+  align-items: center;
   font-size: 1.5rem;
   margin: 1rem;
 `
-const Website = styled.p`
+const Website = styled.a`
+  display: flex;
+  align-items: center;
   font-size: 1.5rem;
   margin: 1rem;
+  text-decoration: none;
+  color: black;
 `
 const Social = styled.div`
   display: flex;
-  justify-content: start;
-  /* background-color: red; */
+  justify-content: space-between;
   margin-top: 4rem;
 `
 const SocialItem = styled.a`
   margin: 1rem;
   display: inline-block;
-  color: black;
+  color: #3C8F94;;
   text-decoration: none;
   &:hover {
     color: #3A7174;
@@ -104,12 +122,22 @@ const ProfileCard = (props) => (
       <PrimaryTag>{props.tag3}</PrimaryTag>
     </TagWrapper>
   </Meta>
-  <Info>
     <Contact>
-      <Location>{props.location}</Location>
-      <Email>{props.email}</Email>
-      <Phone>{props.phone}</Phone>
-      <Website>{props.website}</Website>
+      <Location>
+        <Icon><FaMapMarkerAlt size={22}/></Icon>{props.location}
+      </Location>
+      <Email>
+        <Icon><FaEnvelope size={22}/></Icon>
+        {props.email}
+      </Email>
+      <Phone>
+        <Icon><FaPhone size={22}/></Icon>
+        {props.phone}
+      </Phone>
+      <Website href="https://www.careqik.com" target="_blank" rel="noopener noreferrer" title="LinkedIn"><Icon><FaGlobeAmericas size={22}/></Icon>
+        {props.website}
+      </Website>
+      </Contact>
       <Social>
         <SocialItem href="www.facebook.com" target="_blank" rel="noopener noreferrer" title="Facebook">
           <FaFacebookF size={26}/>
@@ -127,8 +155,6 @@ const ProfileCard = (props) => (
           <FaMediumM size={26}/>
         </SocialItem>
       </Social>
-    </Contact>
-    </Info>
   </Card>
 )
 
