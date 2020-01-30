@@ -20,7 +20,7 @@ const Wrapper = styled.div`
 const Title = styled.h3`
   font-size: 2.5rem;
 `
-const Content = styled.p`
+const Content = styled.div`
   font-size: 1.5rem;
 `
 
@@ -28,6 +28,7 @@ const ContentCard = (props) => (
   <Wrapper>
     <Title>{props.title}</Title>
     <Content>{props.content}</Content>
+
   </Wrapper>
 )
 

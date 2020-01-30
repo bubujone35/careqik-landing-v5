@@ -13,7 +13,6 @@ const StyledButton = styled.button`
   border-radius: 4px;
   outline: none;
   letter-spacing: 0.05em;
-  margin-top: 1.5rem;
 
   -o-transition:.5s;
   -ms-transition:.5s;

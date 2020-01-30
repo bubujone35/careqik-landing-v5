@@ -5,6 +5,7 @@ import ContentCard from '../components/provider-profile/content-card'
 import SideBar from '../components/provider-profile/sidebar'
 import doctor from '../images/doctor.png'
 import SocialIcons from '../components/icons/social/social-icons'
+import PrimaryButton from '../components/buttons/primary'
 
 import styled from 'styled-components'
 
@@ -24,7 +25,36 @@ const MainContent = styled.div`
   flex-direction: column;
   align-items: space-around;
 `
-
+const Contact = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.10);
+  margin: 1rem;
+  padding: 4rem;
+  max-width: 640px;
+  min-width: 320px;
+  box-shadow: 0px 0px 32px rgba(58, 113, 116, 0.2);
+`
+const Left = styled.div`
+  display: flex;
+  flex: 1; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`
+const Right = styled.div`
+  display: flex;
+  justify-content: center;
+  flex: 1
+`
+const Title = styled.h3`
+  font-size: 2.5rem;
+`
+const SubTitle = styled.p`
+  font-size: 1.5rem;
+`
 
 const Patients = () => (
   <Layout>
@@ -47,8 +77,15 @@ const Patients = () => (
           />
           <ContentCard
             title="Qualifications"
-            content="Delenit augue duis dolore te feugait nulla facilisi nam liber tempor cum soluta nobis eleifend. Enim ad minim veniam quis nostrud exerci tation ullamcorper suscipit lobortis. Sequitur mutationem consuetudium lectorum mirum est notare quam littera gothica quam nunc. Consequat duis autem vel eum iriure dolor in."
-          />
+            content="Delenit augue duis dolore te feugait nulla facilisi nam liber tempor cum soluta nobis eleifend. Enim ad minim veniam quis nostrud exerci tation ullamcorper suscipit lobortis. Sequitur mutationem consuetudium lectorum mirum est notare quam littera gothica quam nunc. Consequat duis autem vel eum iriure dolor in."/>
+          <Contact>
+            <Left>
+              <Title>For a free consultation</Title>
+            </Left>
+            <Right>
+              <PrimaryButton>Contact Dr. Lee</PrimaryButton>
+            </Right>
+          </Contact>
         </MainContent>
         <SideBar
           monHours="8:00-4:00pm"
