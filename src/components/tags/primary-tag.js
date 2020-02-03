@@ -6,10 +6,10 @@ const Chip = styled.div`
   border-radius: 100px;
   border: 0.75px solid #DFA81B;
   box-shadow: 0px 0px 16px rgba(223, 168, 27, 0.25);
-  padding: 0.25rem 1.5rem;
-  margin: 1rem;
+  padding: 0.05rem 1.5rem;
+  margin-right: 1rem;
   color: #DFA81B;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 `
 
 const PrimaryTag = ({ children, ...otherProps}) => (

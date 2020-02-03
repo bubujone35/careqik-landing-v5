@@ -22,8 +22,9 @@ const Card = styled.div`
   width: 100%:
   flex: 0;
 
-  @media screen and (max-width:670px) {
+  @media screen and (max-width:1200px) {
   align-items: center;
+  display: none;
 
 }
 
@@ -35,8 +36,8 @@ const Meta = styled.div`
 `
 
 const Avatar = styled.img`
-  max-height: 12rem;
-  max-width: 12rem;
+  max-height: 10rem;
+  max-width: 10rem;
 `
 
 const Name = styled.h3`
@@ -46,9 +47,13 @@ const SubTitle = styled.p`
   font-size: 1.5rem;
 `
 const TagWrapper = styled.div`
+  display: flex;
+  flex-wrap: wrap;
   padding: 2rem 0rem;
   display: flex;
   align-items: center;
+  justify-content: center;
+  max-width: 300px;
 `
 const Contact = styled.div`
   display: flex;

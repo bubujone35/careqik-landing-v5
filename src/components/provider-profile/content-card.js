@@ -17,18 +17,25 @@ const Wrapper = styled.div`
   margin: 1rem;
 }
 `
+const TitleWrapper = styled.div`
+  border-bottom: solid 1px rgba(196, 196, 196, 0.4);;
+  padding: 1rem 0rem;
+`
+
 const Title = styled.h3`
-  font-size: 2.5rem;
+  font-size: 3rem;
 `
 const Content = styled.div`
   font-size: 1.5rem;
+  padding: 1rem 0rem;
 `
 
 const ContentCard = (props) => (
   <Wrapper>
-    <Title>{props.title}</Title>
+    <TitleWrapper>
+      <Title>{props.title}</Title>
+    </TitleWrapper>
     <Content>{props.content}</Content>
-
   </Wrapper>
 )
 

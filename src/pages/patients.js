@@ -6,6 +6,10 @@ import SideBar from '../components/provider-profile/sidebar'
 import doctor from '../images/doctor.png'
 import SocialIcons from '../components/icons/social/social-icons'
 import PrimaryButton from '../components/buttons/primary'
+import QualificationsCard from '../components/provider-profile/qualifications-card'
+import HorizontalProfileCard from '../components/provider-profile/horizontal-profile-card'
+
+import BasicCard from '../components/cards/basic'
 
 import styled from 'styled-components'
 
@@ -39,7 +43,7 @@ const Contact = styled.div`
 `
 const Left = styled.div`
   display: flex;
-  flex: 1; 
+  flex: 1;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -52,9 +56,10 @@ const Right = styled.div`
 const Title = styled.h3`
   font-size: 2.5rem;
 `
-const SubTitle = styled.p`
+const Content = styled.p`
   font-size: 1.5rem;
 `
+
 
 const Patients = () => (
   <Layout>
@@ -71,13 +76,22 @@ const Patients = () => (
           website="www.careqik.com"
         />
         <MainContent>
+          <HorizontalProfileCard />
           <ContentCard
             title="About Dr. Ryan Lee"
             content="Delenit augue duis dolore te feugait nulla facilisi nam liber tempor cum soluta nobis eleifend. Enim ad minim veniam quis nostrud exerci tation ullamcorper suscipit lobortis. Sequitur mutationem consuetudium lectorum mirum est notare quam littera gothica quam nunc. Consequat duis autem vel eum iriure dolor in."
           />
-          <ContentCard
-            title="Qualifications"
-            content="Delenit augue duis dolore te feugait nulla facilisi nam liber tempor cum soluta nobis eleifend. Enim ad minim veniam quis nostrud exerci tation ullamcorper suscipit lobortis. Sequitur mutationem consuetudium lectorum mirum est notare quam littera gothica quam nunc. Consequat duis autem vel eum iriure dolor in."/>
+          <QualificationsCard
+            title="Qualifcations"
+            subtitle="Education"
+          />
+            <ContentCard
+              title="Specialties"
+              content="Delenit augue duis dolore te feugait nulla facilisi nam liber tempor cum soluta nobis eleifend."/>
+          <BasicCard>
+            <Title>Specialties</Title>
+            <Content>Delenit augue duis dolore te feugait nulla facilisi nam liber tempor cum soluta nobis eleifend.</Content>
+          </BasicCard>
           <Contact>
             <Left>
               <Title>For a free consultation</Title>

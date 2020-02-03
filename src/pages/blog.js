@@ -10,7 +10,11 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  padding: 8rem;
+  padding: 8rem 18rem;
+
+  @media screen and (max-width:960px) {
+  padding: 4rem 1rem;
+}
 `
 
 const StyledLink = styled(Link)`
