@@ -5,7 +5,11 @@ const StyledSearchBar = styled.form`
   border-radius: 100px;
   background-color: white;
   display: flex;
-  width: 78%;
+  width: 80%;
+
+  @media screen and (max-width:720px) {
+  width: 95%;
+}
 `
 const StyledInput = styled.input`
   flex: 2;
@@ -15,7 +19,7 @@ const StyledInput = styled.input`
   -webkit-box-flex: 1;
   flex: 3;
   color: #fff;
-  padding: .5rem 1rem;
+  padding: 2rem 1rem;
   border-top-left-radius: 27px;
   border-bottom-left-radius: 27px;
   border-top-right-radius: 0;
@@ -37,10 +41,14 @@ const StyledInput = styled.input`
     background-color: #FCFCFC;
     color: #6A999C;
   }
+
+  @media screen and (max-width:720px) {
+  padding: 1rem 1rem;
+}
 `
 const StyledButton = styled.button`
   flex: 1;
-  padding: 1.5rem 3rem;
+  padding: 2rem 3rem;
   border: none;
   border-radius: 0px 100px 100px 0px;
   background: #FBE6B0;
@@ -63,6 +71,10 @@ const StyledButton = styled.button`
     color: #FDFDFD;
     background: rgba(249, 209, 106, 1);
   }
+
+  @media screen and (max-width:720px) {
+  padding: 1rem 1rem;
+}
 
 `
 

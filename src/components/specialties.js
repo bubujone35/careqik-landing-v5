@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
+import SecondaryButton from "./buttons/secondary"
 import monitor from "../images/monitor.png"
 
 import styled from "styled-components";
@@ -68,6 +69,7 @@ const ListContainer = styled.div`
   display: flex;
   align-content: stretch;
   width: 100%;
+  margin-bottom: 2rem; 
 
 `
 const First = styled.div`
@@ -89,48 +91,13 @@ const List = styled.ul`
 const ListItem = styled.li`
 
 `
-const Button = styled.button`
-padding: 1.2rem 3.5rem;
-border: none;
-cursor: pointer;
-font-weight: 600;
-margin-top: 5rem;
-font-size: 1.5rem;
-color: white;
-border-radius: 4px;
-border: 1px solid white;
-background-color: #1899AB;
-text-decoration: none;
 
--o-transition:.5s;
--ms-transition:.5s;
--moz-transition:.5s;
--webkit-transition:.5s;
-transition:.3s;
--webkit-backface-visibility: hidden;
-
-&:hover {
-  color: #FDFDFD;
-  background: rgba(24, 153, 171, 0.4);
-  box-shadow: 0px 4px 16px rgba(79, 71, 51, 0.5);
-  transform: translateY(-3px);
-
-}
-
-&:active {
-  box-shadow: 0px 4px 16px rgba(79, 71, 51, 0.1);
-  transform: translateY(-1px);
-  }
-}
-
-
-@media screen and (max-width:560px) {
-width: 100%;
-}
-`
 const StyledLink = styled(Link)`
-  text-decoration: none;
   color: white;
+  text-decoration: none;
+  &:hover {
+    color: #3A7174;
+  }
 `
 
 const Specialties = () => (
@@ -157,7 +124,7 @@ const Specialties = () => (
           </List>
         </Second>
       </ListContainer>
-      <Button><StyledLink to="/specialties">Learn more</StyledLink></Button>
+      <SecondaryButton><StyledLink to="/specialties">Learn more</StyledLink></SecondaryButton>
       </Left>
       <Right>
         <Image src={monitor} alt="monitor" />

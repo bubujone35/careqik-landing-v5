@@ -40,7 +40,7 @@ const Section = styled.div`
   align-items: center;
   text-align: center;
   padding: 6rem 4rem;
-  width: 300px;
+  width: 340px;
   background: white;
   margin: 1.5rem;
 
@@ -50,7 +50,7 @@ const Section = styled.div`
 
   @media screen and (max-width:1000px) {
   width: 95%;
-  margin: 1rem; 
+  margin: 1rem;
 }
 `
 const Title = styled.h3`

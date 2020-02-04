@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import SecondaryButton from "../buttons/secondary"
 import { Link } from "gatsby";
+import plant from "../../images/plant.jpg"
 
 const Card = styled.div`
   padding: 2rem;
@@ -20,6 +21,16 @@ const Title = styled.h1`
   color: rgba(51, 132, 154, 0.95);
   line-height: 1.2;
 `
+const ImageWrapper = styled.div`
+  flex: 1;
+  padding: 1rem 0rem;
+`
+
+const Image = styled.img`
+  width: 100%;
+  border-radius: 8px;
+`
+
 const SubTitle = styled.h3`
   font-size: 1.6rem;
   color: rgba(0, 0, 0, 0.54);
@@ -37,6 +48,9 @@ const Content = styled.p`
 
 const PrimaryCard = (props) => (
   <Card>
+    <ImageWrapper>
+      <Image src={plant} />
+    </ImageWrapper>
     <Title>{props.title}</Title>
     <SubTitle>{props.subtitle}</SubTitle>
     <Meta>{props.meta}</Meta>

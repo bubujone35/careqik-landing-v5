@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
+import SecondaryButton from "./buttons/secondary"
 import doctor from "../images/doctor.png"
 
 import styled from "styled-components";
@@ -49,6 +50,7 @@ const Right = styled.div`
   padding: 6rem;
   background-color: #1899AB;
   flex: 2;
+  min-width: 560px; 
 
   @media screen and (max-width:560px) {
   align-items: start;
@@ -79,7 +81,7 @@ const Image = styled.img`
 const List = styled.ul`
   list-style-position: inside;
   font-size: 2rem;
-  margin-top: 2rem;
+  margin: 2rem 0rem;
   color: white;
 
   @media screen and (max-width:560px) {
@@ -89,48 +91,12 @@ const List = styled.ul`
 const ListItem = styled.li`
 
 `
-const Button = styled.button`
-  padding: 1.2rem 3.5rem;
-  border: none;
-  cursor: pointer;
-  font-weight: 600;
-  margin-top: 5rem;
-  font-size: 1.5rem;
-  color: white;
-  border-radius: 4px;
-  border: 1px solid white;
-  background-color: #1899AB;
-  text-decoration: none;
-
-  -o-transition:.5s;
-  -ms-transition:.5s;
-  -moz-transition:.5s;
-  -webkit-transition:.5s;
-  transition:.3s;
-  -webkit-backface-visibility: hidden;
-
-  &:hover {
-    color: #FDFDFD;
-    background: rgba(24, 153, 171, 0.4);
-    box-shadow: 0px 4px 16px rgba(79, 71, 51, 0.5);
-    transform: translateY(-3px);
-
-  }
-
-  &:active {
-    box-shadow: 0px 4px 16px rgba(79, 71, 51, 0.1);
-    transform: translateY(-1px);
-    }
-  }
-
-
-  @media screen and (max-width:560px) {
-  width: 100%;
-}
-`
 const StyledLink = styled(Link)`
-  text-decoration: none;
   color: white;
+  text-decoration: none;
+  &:hover {
+    color: #3A7174;
+  }
 `
 
 const Works = () => (
@@ -147,7 +113,7 @@ const Works = () => (
           <ListItem>Individual therapy</ListItem>
           <ListItem>Family therapy</ListItem>
         </List>
-        <Button><StyledLink to="/treatment">Learn more</StyledLink></Button>
+        <SecondaryButton><StyledLink to="/treatment">Learn more</StyledLink></SecondaryButton>
       </Right>
     </Container>
   </>

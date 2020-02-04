@@ -12,8 +12,8 @@ const Container = styled.div`
   /* justify-content: space-between; */
   flex-wrap: wrap;
 
-  @media screen and (max-width:560px) {
-  padding: 0rem;
+  @media screen and (max-width:720px) {
+  padding: 1rem;
 }
 `
 const Wrapper = styled.div`
@@ -42,7 +42,7 @@ const Left = styled.div`
   margin-right: 2rem;
   min-width: 360px;
   flex: 1;
-}
+
 `
 const Right = styled.div`
   display: flex;
