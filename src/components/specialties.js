@@ -27,21 +27,21 @@ const Left = styled.div`
   }
 `
 const Right = styled.div`
-display: flex;
-flex-direction: column;
-align-items: center;
-padding: 6rem;
-justify-content: center;
-flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6rem;
+  justify-content: center;
+  flex: 1;
 
-@media screen and (max-width:800px) {
-flex: none;
-}
+  @media screen and (max-width:800px) {
+  flex: none;
+  }
 
-@media screen and (max-width:560px) {
-align-items: center;
+  @media screen and (max-width:560px) {
+  align-items: center;
 
-}
+  }
 `
 const Title = styled.div`
   font-size: 3.5rem;
@@ -69,7 +69,7 @@ const ListContainer = styled.div`
   display: flex;
   align-content: stretch;
   width: 100%;
-  margin-bottom: 2rem; 
+  margin-bottom: 2rem;
 
 `
 const First = styled.div`

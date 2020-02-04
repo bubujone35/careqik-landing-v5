@@ -50,11 +50,12 @@ const Right = styled.div`
   padding: 6rem;
   background-color: #1899AB;
   flex: 2;
-  min-width: 560px; 
+  min-width: 360px;
 
   @media screen and (max-width:560px) {
   align-items: start;
   padding: 2rem;
+  border-radius: 0px 0px 0px 0px;
 
   }
 `
