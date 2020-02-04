@@ -84,11 +84,11 @@ const Patients = () => (
         <MainContent>
           <HorizontalProfileCard />
           <ContentCard
-            title="About Dr. Ryan Lee"
+            title="About"
             content="Delenit augue duis dolore te feugait nulla facilisi nam liber tempor cum soluta nobis eleifend. Enim ad minim veniam quis nostrud exerci tation ullamcorper suscipit lobortis. Sequitur mutationem consuetudium lectorum mirum est notare quam littera gothica quam nunc. Consequat duis autem vel eum iriure dolor in."
           />
           <QualificationsCard
-            title="Qualifcations"
+            title="Qualifications"
             subtitle="Education"
           />
             <ContentCard

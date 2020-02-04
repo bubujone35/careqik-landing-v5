@@ -5,6 +5,7 @@ import SEO from "../components/seo"
 
 import Banner from "../components/banner"
 import Works from "../components/works"
+import Search from "../components/search/search"
 import Treatment from "../components/treatment"
 import Specialties from "../components/specialties"
 import Partners from "../components/partners"
@@ -18,6 +19,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <Banner />
+    <Search />
     <Works />
     <Treatment />
     <Partners />
@@ -57,7 +59,7 @@ const IndexPage = () => (
        </button>
      </p>
    </form>
-   
+
   </Layout>
 )
 
