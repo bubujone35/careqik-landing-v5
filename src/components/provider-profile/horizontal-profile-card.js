@@ -3,9 +3,8 @@ import styled from 'styled-components';
 import PrimaryTag from '../tags/primary-tag'
 import doctor from "../../images/doctor.png"
 import { FaMapMarkerAlt } from "react-icons/fa";
-import { FaEnvelope } from "react-icons/fa";
-import { FaPhone } from "react-icons/fa";
 import { FaGlobeAmericas } from "react-icons/fa";
+
 
 const Wrapper = styled.div`
   display: flex;
@@ -13,7 +12,7 @@ const Wrapper = styled.div`
   border-radius: 8px;
   border: 1px solid rgba(0, 0, 0, 0.10);
   margin: 1rem;
-  padding: 4rem;
+  padding: 2rem;
   box-shadow: 0px 0px 32px rgba(58, 113, 116, 0.2);
   flex-wrap: wrap-reverse;
 
@@ -28,14 +27,28 @@ const Left = styled.div`
 const Right = styled.div`
   display: flex;
   flex: 1;
+  flex-direction: column-reverse;
   justify-content: center;
   align-items: center;
+
+  @media screen and (min-width:1200px) {
+  align-items: start;
+}
+`
+const AvatarWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 2;
+  padding: 1.5rem;
+  width: 100%;
 `
 
 const Avatar = styled.img`
-  max-height: 10rem;
-  max-width: 10rem;
+  max-height: 12rem;
+  max-width: 12rem;
 `
+
 const Header = styled.div`
   background-color: white;
 `
@@ -43,10 +56,57 @@ const Main = styled.div`
   background-color: white;
 `
 const Footer = styled.div`
-  background-color: gray;
+  display: flex;
 `
+const FooterRight = styled.div`
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+const FooterLeft = styled.div`
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+const FooterButton = styled.button`
+  padding: 1rem 1.5rem;
+  border-radius: 4px;
+  background: #FBE6B0;
+  color: rgba(51, 132, 154, 0.95);
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: 2px solid rgba(249, 209, 106, 1);
+  outline: none;
+  letter-spacing: 0.05em;
+  width: 100%;
+  margin: 0.5rem;
+
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.3s;
+  -webkit-backface-visibility: hidden;
+
+  &:hover {
+    color: #FDFDFD;
+    background: rgba(249, 209, 106, 1);
+    border: 2px solid #FBE6B0;
+    transform: translateY(-3px);
+    /* box-shadow: 0px 2px 10px rgba(188, 47, 174, 0.49); */
+    box-shadow: 0px 4px 16px rgba(79, 71, 51, 0.2);
+  }
+
+  &:active {
+    transform: translateY(-1px);
+    }
+  }
+`
+
 const Title = styled.h2`
-  font-size: 3rem;
+  font-size: 2.5rem;
 `
 const SubTitle = styled.p`
   font-size: 1.5rem;
@@ -90,27 +150,30 @@ const HorizontalProfileCard = () => (
       <Main>
         <List>
           <ListItem>
-            <Icon><FaMapMarkerAlt size={22}/></Icon>
+            <Icon><FaMapMarkerAlt size={18}/></Icon>
             Chicago, IL
           </ListItem>
           <ListItem>
-            <Icon><FaEnvelope size={22}/></Icon>
-            ryan@careqik.com
-          </ListItem>
-          <ListItem>
-            <Icon><FaPhone size={22}/></Icon>
-            914-413-7544
-          </ListItem>
-          <ListItem>
-            <Icon><FaGlobeAmericas size={22}/></Icon>
+            <Icon><FaGlobeAmericas size={18}/></Icon>
             www.careqik.com
           </ListItem>
         </List>
       </Main>
-      <Footer>Footer</Footer>
+      <Footer>
+        <FooterLeft>
+          <FooterButton>Start Call</FooterButton>
+        </FooterLeft>
+        <FooterRight>
+          <FooterButton>Send Email</FooterButton>
+        </FooterRight>
+      </Footer>
+
+
     </Left>
     <Right>
-      <Avatar src={doctor} alt="doctor"/>
+      <AvatarWrapper>
+        <Avatar src={doctor} alt="doctor"/>
+      </AvatarWrapper>
     </Right>
   </Wrapper>
 

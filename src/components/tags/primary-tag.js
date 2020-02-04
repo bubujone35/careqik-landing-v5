@@ -8,6 +8,7 @@ const Chip = styled.div`
   box-shadow: 0px 0px 16px rgba(223, 168, 27, 0.25);
   padding: 0.05rem 1.5rem;
   margin-right: 1rem;
+  margin-top: 0.5rem; 
   color: #DFA81B;
   font-size: 1.25rem;
 `

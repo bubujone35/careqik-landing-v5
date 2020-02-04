@@ -21,6 +21,7 @@ const Wrapper = styled.div`
   min-height: 75vh;
   @media screen and (max-width:1000px) {
   flex-wrap: wrap;
+  padding: 2rem 0rem;
 }
 `
 const MainContent = styled.div`
@@ -40,6 +41,11 @@ const Contact = styled.div`
   max-width: 640px;
   min-width: 320px;
   box-shadow: 0px 0px 32px rgba(58, 113, 116, 0.2);
+
+  @media screen and (min-width:720px) {
+  padding: 1rem;
+
+}
 `
 const Left = styled.div`
   display: flex;

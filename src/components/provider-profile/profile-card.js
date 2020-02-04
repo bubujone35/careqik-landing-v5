@@ -23,9 +23,8 @@ const Card = styled.div`
   flex: 0;
 
   @media screen and (max-width:1200px) {
-  align-items: center;
+  /* align-items: center; */
   display: none;
-
 }
 
 `
