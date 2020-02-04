@@ -8,14 +8,14 @@ const Container = styled.div`
   border-radius: 8px;
   border: 1px solid rgba(0, 0, 0, 0.10);
   margin: 1rem;
-  padding: 4rem;
+  padding: 3rem;
   max-width: 640px;
   min-width: 320px;
   box-shadow: 0px 0px 32px rgba(58, 113, 116, 0.2);
 
   @media screen and (max-width:720px) {
   margin: 1rem;
-  padding: 2rem; 
+  padding: 2rem;
 }
 `
 

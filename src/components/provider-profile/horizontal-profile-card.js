@@ -17,7 +17,7 @@ const Wrapper = styled.div`
   flex-wrap: wrap-reverse;
 
   @media screen and (min-width:1200px) {
-  /* align-items: center; */
+  align-items: center;
   display: none;
 }
 `
@@ -95,7 +95,6 @@ const FooterButton = styled.button`
     background: rgba(249, 209, 106, 1);
     border: 2px solid #FBE6B0;
     transform: translateY(-3px);
-    /* box-shadow: 0px 2px 10px rgba(188, 47, 174, 0.49); */
     box-shadow: 0px 4px 16px rgba(79, 71, 51, 0.2);
   }
 
