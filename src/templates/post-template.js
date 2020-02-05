@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout'
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import styled from "styled-components"
 import PrimaryCard from '../components/cards/primary-card'
 
@@ -8,12 +8,7 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 6rem 0rem; 
-`
-
-const StyledLink = styled(Link)`
-  text-decoration: none;
-  color: white;
+  padding: 6rem 0rem;
 `
 
 export default ({ data: post }) => (

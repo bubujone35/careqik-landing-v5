@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import SecondaryButton from "../buttons/secondary"
-import { Link } from "gatsby";
 import plant from "../../images/plant.jpg"
 
 const Card = styled.div`

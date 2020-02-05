@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import BasicCard from '../../cards/basic';
 import H3 from '../../headers/h3';
-import PrimaryButton from '../../buttons/primary';
+
 
 const Content = styled.div`
   display: flex;

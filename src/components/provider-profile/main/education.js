@@ -31,6 +31,7 @@ const Icon = styled.div`
   margin-right: 1.5rem;
 `
 const List = styled.ul`
+  list-style-type: none;
 
 `
 const ListItem = styled.li`

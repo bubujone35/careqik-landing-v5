@@ -1,25 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import BasicCard from '../cards/basic'
+import H3 from '../headers/h3';
 
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  flex: 0 1;
-  padding: 1rem;
-  background-color: white;
-  min-width: 240px;
-  padding: 4rem;
-  margin: 1rem;
-  border-radius: 8px;
-
-`
-const Title = styled.h3`
-  font-size: 2.5rem;
-`
-const ListContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-`
 const List = styled.ul`
   display: flex;
   flex-direction: column;
@@ -36,8 +19,8 @@ const ListItem = styled.li`
 `
 
 const SideBar = (props) => (
-  <Container>
-    <Title>Office Hours</Title>
+  <BasicCard>
+    <H3 title="Office Hours"/>
       <List>
         <ListItem>Mon -  {props.monHours}</ListItem>
         <ListItem>Tues - {props.tuesHours}</ListItem>
@@ -47,7 +30,7 @@ const SideBar = (props) => (
         <ListItem>Sat - {props.satHours}</ListItem>
         <ListItem>Sun - {props.sunHours}</ListItem>
       </List>
-  </Container>
+  </BasicCard>
 )
 
 export default SideBar;

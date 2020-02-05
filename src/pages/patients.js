@@ -8,7 +8,7 @@ import About from "../components/provider-profile/main/about";
 import Education from "../components/provider-profile/main/education"
 import Qualifications from "../components/provider-profile/main/qualifications";
 import Contact from "../components/provider-profile/main/contact";
-import ContactForm from "../components/provider-profile/main/contact-form";
+
 
 
 import styled from 'styled-components'
@@ -30,25 +30,6 @@ const MainContent = styled.div`
   flex-direction: column;
   align-items: space-around;
 `
-const Left = styled.div`
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-`
-const Right = styled.div`
-  display: flex;
-  justify-content: center;
-  flex: 1
-`
-const Title = styled.h3`
-  font-size: 2.5rem;
-`
-const Content = styled.p`
-  font-size: 1.5rem;
-`
-
 
 const Patients = () => (
   <Layout>
@@ -70,7 +51,6 @@ const Patients = () => (
           <Education />
           <Qualifications />
           <Contact />
-          <ContactForm />
         </MainContent>
         <SideBar
           monHours="8:00-4:00pm"

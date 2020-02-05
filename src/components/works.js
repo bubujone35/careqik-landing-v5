@@ -2,7 +2,6 @@ import React from "react";
 import { FaUserPlus } from 'react-icons/fa';
 import { FaClipboard } from 'react-icons/fa';
 import { FaCalendarDay } from 'react-icons/fa';
-import PrimaryCard from '../components/cards/primary-card'
 
 import styled from "styled-components";
 

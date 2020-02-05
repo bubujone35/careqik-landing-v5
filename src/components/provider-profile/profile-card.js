@@ -41,6 +41,8 @@ const Avatar = styled.img`
 
 const Name = styled.h3`
   font-size: 3rem;
+  color: rgba(64, 90, 91, 0.9);
+  letter-spacing: 0.02em;
 `
 const SubTitle = styled.p`
   font-size: 1.5rem;

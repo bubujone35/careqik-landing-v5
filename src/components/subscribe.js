@@ -1,5 +1,5 @@
 import React from "react";
-import { Input, Message } from "./inputs/input"
+import { Input } from "./inputs/input"
 import { Link } from "gatsby";
 import PrimaryButton from "../components/buttons/primary"
 
@@ -61,18 +61,6 @@ const Subtitle = styled.p`
   font-size: 1.5rem;
 }
 `
-const Form = styled.form`
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  flex-wrap: wrap;
-
-`
-const StyledLink = styled(Link)`
-  text-decoration: none;
-  padding: 1.5rem 4rem;
-  color: rgba(51, 132, 154, 0.95);
-`
 
 const Subscribe = () => (
   <>
@@ -83,16 +71,46 @@ const Subscribe = () => (
           <Subtitle>Stay updated about all things Careqik</Subtitle>
         </Left>
         <Right>
-        <Form name="newsletter" method="POST" data-netlify data-netlify-honeypot="bot-field">
 
-          <Input
-            for="email"
-            name="email"
-            type="text"
-            placeholder="your.email@example.com"
-          />
-          <PrimaryButton type="submit"><StyledLink to="/thank-you">Subscribe</StyledLink></PrimaryButton>
-        </Form>
+        <form
+        name="contact"
+        method="post"
+        action="/thank-you/"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+      >
+        {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
+        <input type="hidden" name="form-name" value="contact" />
+        <p hidden>
+          <label>
+            Don’t fill this out: <input name="bot-field" />
+          </label>
+        </p>
+        <p>
+          <label>
+            Your name:
+            <br />
+            <input type="text" name="name" />
+          </label>
+        </p>
+        <p>
+          <label>
+            Your email:
+            <br />
+            <input type="email" name="email" />
+          </label>
+        </p>
+        <p>
+          <label>
+            Message:
+            <br />
+            <textarea name="message" />
+          </label>
+        </p>
+        <p>
+          <button type="submit">Send</button>
+        </p>
+      </form>
 
         </Right>
       </Wrapper>

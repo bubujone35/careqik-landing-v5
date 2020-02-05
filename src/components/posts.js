@@ -29,7 +29,6 @@ const getMarkdownPosts = graphql`
   }
 `
 
-
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -73,16 +72,7 @@ const SubHeading = styled.p`
   font-size: 2rem;
   color: rgba(51, 132, 154, 0.98);
 `
-const Card = styled.div`
-  padding: 2rem;
-  border: 1px solid rgba(79, 67, 1, 0.2);
-  border-radius: 8px;
-  margin: 0.5rem;
-  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
-  flex: 1 1 350px;
-  background: rgba(255, 253, 240, 1);
 
-`
 const Title = styled.h1`
   font-size: 3.5rem;
   color: rgba(51, 132, 154, 0.95);
