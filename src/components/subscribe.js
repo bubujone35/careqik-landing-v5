@@ -73,7 +73,7 @@ const Subscribe = () => (
         <Right>
 
         <form
-        name="contact"
+        name="newsletter"
         method="post"
         action="/thank-you/"
         data-netlify="true"
@@ -86,13 +86,7 @@ const Subscribe = () => (
             Don’t fill this out: <input name="bot-field" />
           </label>
         </p>
-        <p>
-          <label>
-            Your name:
-            <br />
-            <input type="text" name="name" />
-          </label>
-        </p>
+        
         <p>
           <label>
             Your email:
@@ -100,13 +94,7 @@ const Subscribe = () => (
             <input type="email" name="email" />
           </label>
         </p>
-        <p>
-          <label>
-            Message:
-            <br />
-            <textarea name="message" />
-          </label>
-        </p>
+
         <p>
           <button type="submit">Send</button>
         </p>
