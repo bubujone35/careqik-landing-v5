@@ -2,12 +2,20 @@ import React from 'react';
 import styled from 'styled-components';
 import PrimaryButton from '../buttons/primary';
 import telemed1 from "../../images/telemed1.png";
+import BasicCard from "../cards/basic";
 
+
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
 
 const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
-  min-height: 25vh;
+  min-height: 45vh;
+  width: 100%;
 `
 const Left = styled.div`
   display: flex;
@@ -28,6 +36,7 @@ const Right = styled.div`
   justify-content: center;
   align-items: center;
   flex: 1;
+  background-color: lightgray;
   @media screen and (max-width:800px) {
   display: none;
 `
@@ -51,9 +60,21 @@ const Image = styled.img`
   @media screen and (max-width:800px) {
   display: none;
 `
+const Overlap = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border-radius: 12px;
+  background-color: gray;
+  width: 95%;
+  margin-top: -5%;
+  padding: 2rem;
+`
 
 
 const ProvidersBanner = () => (
+<Wrapper>
   <Container>
     <Left>
       <Heading>
@@ -66,6 +87,12 @@ const ProvidersBanner = () => (
       <Image src={telemed1} alt="telepsychiatry" />
     </Right>
   </Container>
+  <Overlap>
+    <BasicCard>Card</BasicCard>
+    <BasicCard>Card</BasicCard>
+    <BasicCard>Card</BasicCard>
+  </Overlap>
+</Wrapper>
 );
 
 export default ProvidersBanner;
