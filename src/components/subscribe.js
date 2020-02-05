@@ -91,12 +91,12 @@ const Subscribe = () => (
           <label>
             Your email:
             <br />
-            <input type="email" name="email" />
+            <input type="newsletter-email" name="newsletter-email" />
           </label>
         </p>
 
         <p>
-          <button type="submit">Send</button>
+          <button type="newsletter-submit">Send</button>
         </p>
       </form>
 
