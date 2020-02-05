@@ -73,7 +73,7 @@ const Subscribe = () => (
         <Right>
 
         <form
-        name="newsletter"
+        name="newsletter-subscribe"
         method="post"
         action="/thank-you/"
         data-netlify="true"
@@ -86,7 +86,7 @@ const Subscribe = () => (
             Don’t fill this out: <input name="bot-field" />
           </label>
         </p>
-        
+
         <p>
           <label>
             Your email:
