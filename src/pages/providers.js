@@ -1,14 +1,15 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import ProvidersBanner from "../components/providers/providers-banner";
 
-const Providers = () => (
+const ProvidersPage = () => (
   <Layout>
     <SEO title="Providers" />
 
-    <div>this is the providers page</div>
+    <ProvidersBanner />
 
   </Layout>
 )
 
-export default Providers;
+export default ProvidersPage;
