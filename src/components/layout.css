@@ -1,3 +1,10 @@
+:root {
+  --brand: #1899AB;
+  --brand-secondary: rgba(24, 153, 171, 0.9);
+  --yellow-primary: #FBE6B0;
+  --yellow-secondary: rgba(249, 209, 106, 1);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +16,28 @@ html {
   font-family: Source Sans Pro;
   font-size: 62.5%;
   line-height: 1.6;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 2.25rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+a {
+  color: rgba(64, 90, 91, 0.9);
+  cursor: pointer;
+  text-decoration: none; 
 }
 
 p {

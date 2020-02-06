@@ -50,15 +50,12 @@ const Right = styled.div`
   flex: 1;
 `
 const Title = styled.h2`
-  font-size: 3rem;
   color: rgba(51, 132, 154, 0.95);
 
 `
-const Subtitle = styled.p`
+const Subtitle = styled.h4`
   color: rgba(51, 132, 154);
-  font-size: 2rem;
   @media screen and (max-width:560px) {
-  font-size: 1.5rem;
 }
 `
 

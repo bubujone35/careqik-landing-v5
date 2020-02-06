@@ -38,8 +38,7 @@ const Container = styled.div`
   justify-content: space-around;
   padding: 4rem;
   flex-wrap: wrap;
-  /* background-color: #52ADAF; */
-  background-color: #1899AB;
+  background-color: var(--brand); 
 
   @media screen and (max-width:560px) {
   padding: 1rem;
@@ -68,13 +67,11 @@ const ViewAllButton = styled.button`
   font-weight: 600;
   background-color: transparent;
 `
-const SubHeading = styled.p`
-  font-size: 2rem;
+const SubHeading = styled.h4`
   color: rgba(51, 132, 154, 0.98);
 `
 
-const Title = styled.h1`
-  font-size: 3.5rem;
+const Title = styled.h2`
   color: rgba(51, 132, 154, 0.95);
   line-height: 1.2;
 `

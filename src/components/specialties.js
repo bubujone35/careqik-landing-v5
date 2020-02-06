@@ -16,7 +16,7 @@ const Left = styled.div`
   flex-direction: column;
   align-items: start;
   padding: 6rem;
-  background-color: #1899AB;
+  background-color: var(--brand); 
   flex: 2;
 
   @media screen and (max-width:560px) {
@@ -43,8 +43,7 @@ const Right = styled.div`
 
   }
 `
-const Title = styled.div`
-  font-size: 3.5rem;
+const Title = styled.h2`
   color: white;
 
   @media screen and (max-width:560px) {
@@ -52,8 +51,7 @@ const Title = styled.div`
 
 }
 `
-const Subtitle = styled.div`
-  font-size: 2rem;
+const Subtitle = styled.h4`
   color: white;
 
   @media screen and (max-width:560px) {

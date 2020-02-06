@@ -9,7 +9,7 @@ const NavBar = styled.div`
   justify-content: space-between;
   align-items: center;
   font-size: 1.8rem;
-  background-color: #1899AB;
+  background-color: var(--brand);
   border-bottom: solid 0.5px white;
 
 `
@@ -25,7 +25,7 @@ const Right = styled.div`
 `
 
 const SubNav = styled.div`
-  background-color: rgba(24, 153, 171, 0.9);
+  background-color: var(--brand-secondary); 
   height: 24px;
   display: flex;
   justify-content: center;

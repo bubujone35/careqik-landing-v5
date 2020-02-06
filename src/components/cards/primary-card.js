@@ -15,8 +15,7 @@ const Card = styled.div`
   max-width: 1200px;
 `
 
-const Title = styled.h1`
-  font-size: 3.5rem;
+const Title = styled.h2`
   color: rgba(51, 132, 154, 0.95);
   line-height: 1.2;
 `
@@ -31,7 +30,6 @@ const Image = styled.img`
 `
 
 const SubTitle = styled.h3`
-  font-size: 1.6rem;
   color: rgba(0, 0, 0, 0.54);
 `
 const Meta = styled.h4`

@@ -4,16 +4,16 @@ import styled from "styled-components";
 
 
 const StyledButton = styled.button`
-  background: #FBE6B0;
+  background: var(--yellow-primary);
   color: rgba(51, 132, 154, 0.95);
   font-size: 1.7rem;
   font-weight: bold;
   padding: 1.5rem 2.5rem;
-  border: 2px solid rgba(249, 209, 106, 1);
+  border: 2px solid var(--yellow-secondary);
   border-radius: 4px;
   outline: none;
   letter-spacing: 0.05em;
-  margin-top: 1rem; 
+  margin-top: 1rem;
 
   -o-transition:.5s;
   -ms-transition:.5s;
@@ -25,7 +25,7 @@ const StyledButton = styled.button`
 
   &:hover {
     color: #FDFDFD;
-    background: rgba(249, 209, 106, 1);
+    background: var(--yellow-secondary); 
     border: 2px solid #FBE6B0;
     transform: translateY(-3px);
     /* box-shadow: 0px 2px 10px rgba(188, 47, 174, 0.49); */

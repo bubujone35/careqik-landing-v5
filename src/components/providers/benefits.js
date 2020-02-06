@@ -17,16 +17,16 @@ const Header = styled.div`
 `
 
 const Title = styled.h2`
-  font-size: 3.5rem;
   text-align: center;
+  color: rgba(64, 90, 91, 0.9);
 
   @media screen and (max-width:720px) {
   font-size: 3rem;
 }
 `
 const SubTitle = styled.h3`
-  font-size: 2.5rem;
   text-align: center;
+  color: rgba(64, 90, 91, 0.9);
 
   @media screen and (max-width:720px) {
   font-size: 1.5rem;

@@ -9,8 +9,7 @@ const Container = styled.div`
   background-color: lightgray;
   padding: 4rem;
 `
-const Title = styled.h3`
-  font-size: 3.5rem;
+const Title = styled.h2`
   text-align: center;
 `
 const SubTitle = styled.h4`

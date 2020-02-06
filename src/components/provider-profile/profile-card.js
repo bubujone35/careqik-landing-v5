@@ -40,7 +40,6 @@ const Avatar = styled.img`
 `
 
 const Name = styled.h3`
-  font-size: 3rem;
   color: rgba(64, 90, 91, 0.9);
   letter-spacing: 0.02em;
 `
@@ -92,8 +91,7 @@ const Website = styled.a`
   align-items: center;
   font-size: 1.5rem;
   margin: 1rem;
-  text-decoration: none;
-  color: black;
+
 `
 const Social = styled.div`
   display: flex;

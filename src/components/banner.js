@@ -10,7 +10,7 @@ const Container = styled.div`
   justify-content: space-around;
   flex-wrap: wrap;
   min-height: 60vh;
-  background-color: #1899AB;
+  background-color: var(--brand); 
 `
 const Left = styled.div`
   display: flex;
@@ -36,7 +36,7 @@ const Right = styled.div`
   display: none;
 `
 const Title = styled.h1`
-  font-size: 7rem;
+  /* font-size: 7rem; */
   line-height: 1.2;
 
   @media screen and (max-width:720px) {

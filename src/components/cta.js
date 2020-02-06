@@ -14,7 +14,7 @@ const Container = styled.div`
   background-color: #FAFAFA;
 
   @media screen and (max-width:720px) {
-  padding: 4rem 2rem; 
+  padding: 4rem 2rem;
 
 }
 `
@@ -38,7 +38,7 @@ const Wrapper = styled.div`
 }
 `
 
-const Title = styled.h3`
+const Title = styled.h2`
   font-size: 4.5rem;
   color: rgba(51, 132, 154, 0.95);
   letter-spacing: 1px;

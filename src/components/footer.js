@@ -13,7 +13,7 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  background-color: #1899AB;
+  background-color: var(--brand); 
   height: 300px;
   bottom: 0
   position: absolute;

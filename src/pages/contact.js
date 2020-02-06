@@ -13,7 +13,6 @@ const Wrapper = styled.div`
   max-width: 720px;
 `
 const Title = styled.h2`
-  font-size: 3rem;
   color: rgba(51, 132, 154, 0.95);
 `
 const StyledLabel = styled.label`

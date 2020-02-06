@@ -51,13 +51,13 @@ const StyledButton = styled.button`
   padding: 2rem 3rem;
   border: none;
   border-radius: 0px 100px 100px 0px;
-  background: #FBE6B0;
+  background: var(--yellow-primary);
   color: rgba(51, 132, 154, 0.95);
   letter-spacing: 0.05em;
   font-size: 1.7rem;
   cursor: pointer;
   font-size: 1.5rem;
-  border-left: 1px solid rgba(249, 209, 106, 1);
+  border-left: 1px solid var(--yellow-secondary);
   font-weight: bold;
 
   -o-transition:.5s;
@@ -69,7 +69,7 @@ const StyledButton = styled.button`
 
   &:hover {
     color: #FDFDFD;
-    background: rgba(249, 209, 106, 1);
+    background: var(--yellow-secondary); 
   }
 
   @media screen and (max-width:720px) {

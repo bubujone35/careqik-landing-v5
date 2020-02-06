@@ -22,14 +22,12 @@ const Bottom = styled.div`
   justify-content: center;
 `
 const Title = styled.h2`
-  font-size: 3.5rem;
 
   @media screen and (max-width:720px) {
   font-size: 2.5rem;
 }
 `
 const SubTitle = styled.h3`
-  font-size: 2rem;
 
   @media screen and (max-width:720px) {
   font-size: 1.5rem;

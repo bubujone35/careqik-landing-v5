@@ -9,8 +9,6 @@ const List = styled.ul`
   list-style-position: inside;
   font-size: 1.5rem;
   margin-top: 2rem;
-  color: black;
-
 `
 const ListItem = styled.li`
   display: flex;

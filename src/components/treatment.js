@@ -29,26 +29,12 @@ const Left = styled.div`
   }
 `
 
-// display: flex;
-// flex-direction: column;
-// align-items: start;
-// padding: 6rem;
-// background-color: #1899AB;
-// flex: 2;
-//
-// @media screen and (max-width:560px) {
-// align-items: center;
-// padding: 2rem;
-// border-radius: 0px 0px 0px 0px;
-//
-// }
-
 const Right = styled.div`
   display: flex;
   flex-direction: column;
   align-items: start;
   padding: 6rem;
-  background-color: #1899AB;
+  background-color: var(--brand); 
   flex: 2;
   min-width: 360px;
 
@@ -59,15 +45,13 @@ const Right = styled.div`
 
   }
 `
-const Title = styled.div`
-  font-size: 3.5rem;
+const Title = styled.h2`
   color: white;
 
   @media screen and (max-width:560px) {
   font-size: 2.5rem;
 `
-const Subtitle = styled.div`
-  font-size: 2rem;
+const Subtitle = styled.h4`
   color: white;
 
   @media screen and (max-width:560px) {

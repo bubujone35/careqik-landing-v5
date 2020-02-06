@@ -27,7 +27,6 @@ const Header = styled.div`
   background: white;
 `
 const Heading = styled.h2`
-  font-size: 3.5rem;
   padding: 1rem 4rem;
   color: rgba(51, 132, 154, 0.95);
 `
@@ -53,7 +52,6 @@ const Section = styled.div`
 }
 `
 const Title = styled.h3`
-  font-size: 2rem;
   color: #074B5E;
 `
 const Content = styled.p`
