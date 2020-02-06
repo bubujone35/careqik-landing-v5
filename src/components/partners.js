@@ -28,9 +28,9 @@ const Header = styled.div`
   padding: 1rem;
 `
 const Heading = styled.h3`
-  font-size: 1.6rem;
   padding: 1rem 4rem;
   color: rgba(0, 0, 0, 0.45);
+  border-bottom: solid 1px lightgray;
 `
 const Section = styled.div`
   flex: 0 0 auto;

@@ -22,7 +22,7 @@ const getMarkdownPosts = graphql`
             subtitle
             date(formatString: "MMMM Do, YYYY")
           }
-          excerpt
+          excerpt(pruneLength: 120)
         }
       }
     }
@@ -38,7 +38,7 @@ const Container = styled.div`
   justify-content: space-around;
   padding: 4rem;
   flex-wrap: wrap;
-  background-color: var(--brand); 
+  background-color: var(--brand);
 
   @media screen and (max-width:560px) {
   padding: 1rem;

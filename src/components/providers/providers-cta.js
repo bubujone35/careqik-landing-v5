@@ -6,16 +6,19 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: lightgray;
-  padding: 4rem;
+  background-color: var(--brand-secondary);
+  padding: 6rem 4rem;
+  border-bottom: 4px solid var(--yellow-secondary); 
 `
 const Title = styled.h2`
   text-align: center;
+  color: white;
 `
 const SubTitle = styled.h4`
   font-size: 2rem;
   margin-bottom: 2rem;
   text-align: center;
+  color: white;
 `
 
 
