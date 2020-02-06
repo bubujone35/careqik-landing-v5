@@ -11,10 +11,12 @@ const Container = styled.div`
 `
 const Title = styled.h3`
   font-size: 3.5rem;
+  text-align: center;
 `
 const SubTitle = styled.h4`
   font-size: 2rem;
   margin-bottom: 2rem;
+  text-align: center; 
 `
 
 

@@ -80,7 +80,7 @@ const ProvidersBanner = () => (
       <Heading>
         <Title>Help more patients</Title>
         <SubTitle>Join our provider directory and get discovered by patients online.</SubTitle>
-        <PrimaryButton>Get started</PrimaryButton>
+        <PrimaryButton>Let's get started</PrimaryButton>
       </Heading>
     </Left>
     <Right>

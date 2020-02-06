@@ -1,56 +1,62 @@
 import React from 'react';
+import MediaCardList from '../cards/media-card-list'
+import doctor from '../../images/doctor.png'
+
 import styled from 'styled-components';
-import PrimaryButton from '../buttons/primary';
-import MediaCard from '../cards/media-card';
+
 
 const Container = styled.div`
   display: flex;
-  background-color: lightgray;
-  padding: 1rem;
+  flex-direction: column;
+  padding: 2rem;
   width: 100%;
 `
-const Left = styled.div`
+const Top = styled.div`
+  background-color: lightgray;
+  padding: 1rem;
+`
+const Bottom = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 1rem;
   align-items: center;
   justify-content: center;
-  flex: 1;
 `
-const Right = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
-  background-color: white;
-  flex: 1;
-  padding: 4rem;
-`
-const Heading = styled.div`
-
-`
-
 const Title = styled.h2`
-  font-size: 4rem;
+  font-size: 3.5rem;
 `
 const SubTitle = styled.h3`
   font-size: 2rem;
-  margin-bottom: 1rem;
 `
+
 
 const ProviderTestimonials = () => (
   <Container>
-    <Left>
-      <MediaCard />
-      <MediaCard />
-      <MediaCard />
-    </Left>
-    <Right>
-      <Heading>
-        <Title>Join the fastest growing mental health directory</Title>
-        <SubTitle>Here is a subtitle below, we need some catchy copy.<br/> Careqik is the best!</SubTitle>
-      </Heading>
-      <PrimaryButton>Sign up today</PrimaryButton>
-    </Right>
+    <Top>
+      <Title>Provider Testimonials</Title>
+      <SubTitle>We've help hundreds of providers reach their practice goals. </SubTitle>
+    </Top>
+    <Bottom>
+      <MediaCardList
+        image={doctor}
+        title="Dr. Jim Jones"
+        subtitle="Psychiatric Nurse Practitioner"
+        content="Facer possim assum typi non habent claritatem insitam est usus legentis in iis qui. Lectores legere me lius quod ii legunt saepius claritas est etiam processus dynamicus qui."
+        />
+        <MediaCardList
+          image={doctor}
+          title="Dr. George Klooney"
+          subtitle="Psychiatrist"
+          content="Facer possim assum typi non habent claritatem insitam est usus legentis in iis qui. Lectores legere me lius quod ii legunt saepius claritas est etiam processus dynamicus qui."
+          />
+          <MediaCardList
+            image={doctor}
+            title="Dr. Rapunzel Stillskin"
+            subtitle="Licensed Professional Counselor"
+            content="Facer possim assum typi non habent claritatem insitam est usus legentis in iis qui. Lectores legere me lius quod ii legunt saepius claritas est etiam processus dynamicus qui."
+            />
+    </Bottom>
+
   </Container>
 );
 
