@@ -12,7 +12,6 @@ const Container = styled.div`
   width: 100%;
 `
 const Top = styled.div`
-  background-color: lightgray;
   padding: 1rem;
 `
 const Bottom = styled.div`
@@ -24,9 +23,17 @@ const Bottom = styled.div`
 `
 const Title = styled.h2`
   font-size: 3.5rem;
+
+  @media screen and (max-width:720px) {
+  font-size: 2.5rem;
+}
 `
 const SubTitle = styled.h3`
   font-size: 2rem;
+
+  @media screen and (max-width:720px) {
+  font-size: 1.5rem;
+}
 `
 
 

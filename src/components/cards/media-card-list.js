@@ -10,7 +10,7 @@ const Container = styled.div`
   border-bottom: 1px solid lightgray;
   padding: 1rem;
   min-width: 340px;
-  max-width: 420px; 
+  max-width: 420px;
 `
 const Left = styled.div`
   display: flex;
@@ -28,16 +28,26 @@ const Right = styled.div`
 `
 const Image = styled.img`
   max-width: 7.5rem;
+
+
 `
 const Title = styled.h4`
   font-size: 2.5rem;
+
+  @media screen and (max-width:720px) {
+  font-size: 2rem;
+}
 `
 const SubTitle = styled.span`
   font-size: 1.75rem;
+
+  @media screen and (max-width:720px) {
+  font-size: 1.5rem;
+}
 `
 
 const Content = styled.p`
-  font-size: 1.5rem;
+  font-size: 1.15rem;
   color: black;
 `
 

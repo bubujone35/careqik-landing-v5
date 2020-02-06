@@ -6,7 +6,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: darkgray;
+  background-color: lightgray;
   padding: 4rem;
 `
 const Title = styled.h3`
@@ -16,7 +16,7 @@ const Title = styled.h3`
 const SubTitle = styled.h4`
   font-size: 2rem;
   margin-bottom: 2rem;
-  text-align: center; 
+  text-align: center;
 `
 
 
