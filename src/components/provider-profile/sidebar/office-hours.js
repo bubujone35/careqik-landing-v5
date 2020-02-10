@@ -1,7 +1,8 @@
 import React from 'react';
+import BasicCard from '../../cards/basic'
+import H3 from '../../headers/h3';
+
 import styled from 'styled-components';
-import BasicCard from '../cards/basic'
-import H3 from '../headers/h3';
 
 const List = styled.ul`
   display: flex;
@@ -16,7 +17,7 @@ const ListItem = styled.li`
   margin-top: 1.5rem;
 `
 
-const SideBar = (props) => (
+const OfficeHours = (props) => (
   <BasicCard>
     <H3 title="Office Hours"/>
       <List>
@@ -29,6 +30,6 @@ const SideBar = (props) => (
         <ListItem>Sun - {props.sunHours}</ListItem>
       </List>
   </BasicCard>
-)
+);
 
-export default SideBar;
+export default OfficeHours;

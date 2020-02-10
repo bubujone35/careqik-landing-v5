@@ -2,7 +2,7 @@ import React from 'react';
 import Layout from '../components/layout'
 
 import ProfileCard from '../components/provider-profile/profile-card'
-import SideBar from '../components/provider-profile/sidebar'
+import SideBar from '../components/provider-profile/sidebar/sidebar'
 import HorizontalProfileCard from '../components/provider-profile/horizontal-profile-card';
 import About from "../components/provider-profile/main/about";
 import Education from "../components/provider-profile/main/education"
@@ -52,16 +52,7 @@ const Patients = () => (
           <Qualifications />
           <Contact />
         </MainContent>
-        <SideBar
-          monHours="8:00-4:00pm"
-          tuesHours="8:00-4:00pm"
-          wedsHours="8:00-4:00pm"
-          thursHours="8:00-4:00pm"
-          friHours="8:00-4:00pm"
-          satHours="8:00-4:00pm"
-          sunHours="8:00-4:00pm"
-        />
-
+        <SideBar/>
     </Wrapper>
   </Layout>
 )
