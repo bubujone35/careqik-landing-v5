@@ -15,18 +15,9 @@ const Container = styled.div`
 `
 
 const SideBar = (props) => (
-<Container>
-  <OfficeHours
-    monHours="8:00am-4:00pm"
-    tuesHours="8:00am-4:00pm"
-    wedsHours="8:00am-4:00pm"
-    thursHours="8:00am-4:00pm"
-    friHours="8:00am-4:00pm"
-    satHours="8:00am-4:00pm"
-    sunHours="8:00am-4:00pm"
-  />
-  <Insurance />
-</Container>
+  <Container>
+
+  </Container>
 
 )
 

@@ -21,14 +21,14 @@ const Icon = styled.div`
   color: green;
 `
 
-const Insurance = () => (
+const Insurance = (props) => (
   <BasicCard>
     <H3 title="Insurance"/>
       <Accepted>
         <p>Insurance Accepted?</p>
       </Accepted>
       <Answer>
-        <p>Yes</p>
+        {props.answer}
         <Icon><FaCheck size={18}/></Icon>
       </Answer>
   </BasicCard>

@@ -37,7 +37,7 @@ const ListItem = styled.li`
 
 `
 
-const Qualifications = () => (
+const Qualifications = (props) => (
   <BasicCard>
     <H3 title="Qualifications"/>
     <Content>
@@ -47,8 +47,8 @@ const Qualifications = () => (
         </Left>
         <Right>
           <List>
-            <ListItem>American Nurses Credentialing Center</ListItem>
-            <ListItem>Psychiatric Mental Health Nurse Practitioner</ListItem>
+            <ListItem>{props.qualification1}</ListItem>
+            <ListItem>{props.organization1}</ListItem>
           </List>
         </Right>
       </Wrapper>

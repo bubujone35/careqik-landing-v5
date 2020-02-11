@@ -134,27 +134,27 @@ const Icon = styled.div`
   align-items: center;
 `
 
-const HorizontalProfileCard = () => (
+const HorizontalProfileCard = (props) => (
   <Wrapper>
     <Left>
       <Header>
-        <Title>Dr. Ryan Lee</Title>
-        <SubTitle>Psychiatric Nurse Practitioner</SubTitle>
+        <Title>{props.name}</Title>
+        <SubTitle>{props.subtitle}</SubTitle>
         <Tags>
-          <PrimaryTag>Depression</PrimaryTag>
-          <PrimaryTag>Anxiety</PrimaryTag>
-          <PrimaryTag>Addiction</PrimaryTag>
+          <PrimaryTag>{props.tag1}</PrimaryTag>
+          <PrimaryTag>{props.tag2}</PrimaryTag>
+          <PrimaryTag>{props.tag3}</PrimaryTag>
         </Tags>
       </Header>
       <Main>
         <List>
           <ListItem>
             <Icon><FaMapMarkerAlt size={18}/></Icon>
-            Chicago, IL
+            {props.location}
           </ListItem>
           <ListItem>
             <Icon><FaGlobeAmericas size={18}/></Icon>
-            www.careqik.com
+            {props.website}
           </ListItem>
         </List>
       </Main>

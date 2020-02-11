@@ -38,7 +38,7 @@ const ListItem = styled.li`
 
 `
 
-const Education = () => (
+const Education = (props) => (
   <BasicCard>
     <H3 title="Education"/>
     <Content>
@@ -48,8 +48,8 @@ const Education = () => (
         </Left>
         <Right>
           <List>
-            <ListItem>Fairfield University</ListItem>
-            <ListItem>Doctor of Nursing Practice</ListItem>
+            <ListItem>{props.school1}</ListItem>
+            <ListItem>{props.degree1}</ListItem>
           </List>
         </Right>
       </Wrapper>
@@ -59,8 +59,8 @@ const Education = () => (
         </Left>
         <Right>
           <List>
-            <ListItem>Fairfield University</ListItem>
-            <ListItem>Bachelor's of Science in Nursing</ListItem>
+            <ListItem>{props.school2}</ListItem>
+            <ListItem>{props.degree2}</ListItem>
           </List>
         </Right>
       </Wrapper>
