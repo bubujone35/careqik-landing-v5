@@ -11,10 +11,14 @@ const StyledButton = styled.button`
   cursor: pointer;
   font-size: 1.75rem;
   margin: 1rem 0;
-  color: rgba(51, 132, 154, 0.98);
   font-weight: 600;
   background-color: transparent;
   text-transform: uppercase;
+  border-bottom: solid 2px var(--yellow-primary);
+  padding: 1rem 0rem;
+  &:hover {
+    border-bottom: solid 2px var(--yellow-secondary);
+  }
 
   -o-transition:.5s;
   -ms-transition:.5s;

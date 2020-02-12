@@ -34,7 +34,7 @@ const Right = styled.div`
   flex-direction: column;
   align-items: start;
   padding: 6rem;
-  background-color: var(--brand); 
+  background-color: var(--brand);
   flex: 2;
   min-width: 360px;
 
@@ -76,6 +76,7 @@ const List = styled.ul`
 const ListItem = styled.li`
 
 `
+
 const StyledLink = styled(Link)`
   color: white;
   text-decoration: none;
