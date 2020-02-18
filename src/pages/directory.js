@@ -20,7 +20,6 @@ const Directory = () => (
         tag2="anxiety"
         tag3="addiction"
         location="Chicago, IL"
-        website="www.careqik.com"
       />
       <HorizontalPreviewCard
         name="Dr. Ryan Lee"
@@ -29,7 +28,6 @@ const Directory = () => (
         tag2="anxiety"
         tag3="addiction"
         location="Chicago, IL"
-        website="www.careqik.com"
       />
       <HorizontalPreviewCard
         name="Dr. Ryan Lee"
@@ -38,7 +36,6 @@ const Directory = () => (
         tag2="anxiety"
         tag3="addiction"
         location="Chicago, IL"
-        website="www.careqik.com"
       />
     </Wrapper>
   </Layout>

@@ -4,6 +4,7 @@ import PrimaryTag from '../tags/primary-tag'
 import doctor from "../../images/doctor.png"
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { FaGlobeAmericas } from "react-icons/fa";
+import { FaStar } from "react-icons/fa";
 
 
 const Wrapper = styled.div`
@@ -15,7 +16,7 @@ const Wrapper = styled.div`
   padding: 2rem;
   box-shadow: 0px 0px 32px rgba(58, 113, 116, 0.2);
   flex-wrap: wrap-reverse;
-  max-width: 720px; 
+  max-width: 720px;
 `
 const Left = styled.div`
   flex: 2;
@@ -101,7 +102,7 @@ const FooterButton = styled.button`
 `
 
 const Title = styled.h2`
-  font-size: 2.5rem;
+  font-size: 3rem;
 `
 const SubTitle = styled.p`
   font-size: 1.5rem;
@@ -129,6 +130,19 @@ const Icon = styled.div`
   margin-right: 1.5rem;
   align-items: center;
 `
+const Icons = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+`
+
+const Body = styled.div`
+  padding: 0.5rem 0rem;
+  margin: 0.5rem 0rem;
+`
+const Content = styled.p`
+
+`
 
 const HorizontalPreviewCard = (props) => (
   <Wrapper>
@@ -148,27 +162,32 @@ const HorizontalPreviewCard = (props) => (
             <Icon><FaMapMarkerAlt size={18}/></Icon>
             {props.location}
           </ListItem>
-          <ListItem>
-            <Icon><FaGlobeAmericas size={18}/></Icon>
-            {props.website}
-          </ListItem>
         </List>
+
+        <Body>
+          <Content>Option congue nihil imperdiet doming id quod mazim placerat facer possim assum typi non. Dolor in hendrerit...
+          </Content>
+        </Body>
+
+
       </Main>
       <Footer>
         <FooterLeft>
-          <FooterButton>Start Call</FooterButton>
+          <FooterButton>See Profile</FooterButton>
         </FooterLeft>
         <FooterRight>
-          <FooterButton>Send Email</FooterButton>
+          <FooterButton>Contact</FooterButton>
         </FooterRight>
       </Footer>
-
-
     </Left>
+
     <Right>
       <AvatarWrapper>
         <Avatar src={doctor} alt="doctor"/>
       </AvatarWrapper>
+      <Icons>
+        <Icon><FaStar size={24}/></Icon>
+      </Icons>
     </Right>
   </Wrapper>
 

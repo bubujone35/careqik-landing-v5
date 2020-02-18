@@ -14,10 +14,10 @@ const StyledButton = styled.button`
   font-weight: 600;
   background-color: transparent;
   text-transform: uppercase;
-  border-bottom: solid 2px var(--yellow-primary);
+  border-bottom: solid 3px var(--yellow-primary);
   padding: 1rem 0rem;
   &:hover {
-    border-bottom: solid 2px var(--yellow-secondary);
+    border-bottom: solid 3px var(--yellow-secondary);
   }
 
   -o-transition:.5s;

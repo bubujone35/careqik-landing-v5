@@ -11,8 +11,9 @@ const Card = styled.div`
   box-shadow: 0px 0px 32px rgba(25, 154, 171, 0.15);
   flex: 1 1 350px;
   border: 1px solid #F6F6F6;
-  background: rgba(255, 253, 240, 1);
-  max-width: 1200px;
+  /* background: rgba(255, 253, 240, 1); */
+  background: white;
+  max-width: 900px;
 `
 
 const Title = styled.h2`
