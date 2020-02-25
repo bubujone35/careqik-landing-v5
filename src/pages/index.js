@@ -34,7 +34,7 @@ const IndexPage = () => (
       name="contact-index"
       method="post"
       autocomplete="off"
-      data-netlify-honeypot="bot-field"
+      //data-netlify-honeypot="bot-field"
       data-netlify
       data-secure
     >
