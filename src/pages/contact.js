@@ -77,7 +77,7 @@ export default function Contact() {
           data-netlify="true"
           data-netlify-honeypot="bot-field"
           data-secure
-          // onSubmit={handleSubmit}
+          onSubmit={handleSubmit}
         >
           <p>
             <StyledLabel>
